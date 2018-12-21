@@ -66,23 +66,3 @@ Press Enter to Continue
 ```
 
 Une fois créé, le certificat se situe dans `/etc/letsencrypt/live/domain.tld`.
-
-### Renouvellement automatique
-
-Le certificat est valable trois mois, avant de devoir être renouvelé. Pour s'en assurer, on crée une tâche `cron` :
-
-```none
-sudo crontab -e
-```
-
-We do the renewal in the night from Sunday to Monday:
-
-```none
-30 5 * * 1 /opt/certbot/certbot-auto renew
-```
-
-It is also necessary to renew its server at the same time, so that it takes into account the new certificates. If you use *nginx*:
-
-```none
-35 5 * * 1 /etc/init.d/nginx reload
-```
