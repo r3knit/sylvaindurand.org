@@ -60,11 +60,9 @@ xset s off
 xset s noblank
 
 unclutter &
-chromium-browser /path/to/your/file.html --window-size=1920,1080 --start-fullscreen --kiosk --incognito --noerrdialogs --disable-translate --no-first-run --fast --fast-start --disable-infobars --disk-cache-dir=/dev/null
+chromium-browser /path/to/your/file.html --window-size=1920,1080 --start-fullscreen --kiosk --incognito --noerrdialogs --disable-translate --no-first-run --fast --fast-start --disable-infobars --disable-features=TranslateUI --disk-cache-dir=/dev/null
 ```
 
 The `xset` commands are used to avoid the automatic standby of the system, which will otherwise interrupt the display after a specified time.
 
 The option `--window-size=` is essential, otherwise Chromium will only be displayed on half of the screen, despite the other instructions, in the absence of a window manager.
-
-Only limitation: Chromium can always display a notification proposing to translate the page if it is in another language[[the `--disable-translate` flag [has been removed in 2017](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-reviews/nOgks4a7_uI)]]. To avoid this, there is no choice but to avoid indicating, in the HTML on the page, a language different from the browser.
