@@ -330,7 +330,7 @@ dev.off()
 
 ## Visualizing map data: urban areas
 
-[Natural Earth](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-urban-area/) provides urban areas shapefiles, derived from satellite data. Let'us map them with night lights colors[^urban]:
+[Natural Earth](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-urban-area/) provides urban areas shapefiles, derived from satellite data. Let'us map them with night lights colors:
 
 ```r
 areas  <- readOGR(dsn="shp/ne/cultural",layer="ne_10m_urban_areas")
