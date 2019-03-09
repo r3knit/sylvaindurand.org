@@ -18,7 +18,7 @@ sudo apt-get install tor
 Pour lancer *Tor*, il suffit de lancer :
 
 ```
-sudo tor start
+sudo service tor start
 ```
 
 Pour vérifier qu'il fonctionne, il suffit de lancer la commande suivante depuis un terminal :
@@ -45,6 +45,13 @@ pip install requests[socks]
 pip install requests[security]
 ```
 
+S'il y a une erreur pour l'installation de `cryptography` la commande précédente, installez les paquets suivants :
+
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+```
+
+
 On utilise alors :
 
 ```python
@@ -54,7 +61,7 @@ import requests
 Vous pouvez vérifier votre adresse IP sans *Tor* avec la commande :
 
 ```python
-requests.get('https://api.ipify.org').text
+requests.get('https://ident.me').text
 ```
 
 Pour utiliser *Tor*, on lui dit d'utiliser un proxy :
@@ -71,7 +78,7 @@ requests.get(url, proxies=proxies).text
 Ainsi, vous devriez avoir une nouvelle adresse IP avec :
 
 ```python
-requests.get('https://api.ipify.org', proxies=proxies).text
+requests.get('https://ident.me', proxies=proxies).text
 ```
 
 ### Obtention d'une nouvelle identité
