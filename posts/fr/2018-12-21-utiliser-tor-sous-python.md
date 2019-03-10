@@ -52,7 +52,7 @@ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 ```
 
 
-On utilise alors :
+On utilise alors, dans Python :
 
 ```python
 import requests
@@ -129,11 +129,11 @@ requests.get('https://api.ipify.org', proxies=proxies).text
 
 Si l'anonymat est requis, il peut être utile de changer l'*[user-agent](https://fr.wikipedia.org/wiki/User_agent)*, qui trahit notre identité auprès du serveur. On installe pour cela `fake_useragent` :
 
-```python
+```
 pip install fake_useragent
 ```
 
-On peut alors utiliser :
+On peut alors utiliser, dans Python :
 
 ```python
 from fake_useragent import UserAgent
