@@ -1,5 +1,6 @@
 ---
 title: Authentification <br/>par clef avec SSH
+categories: Linux
 ---
 
 Lorsque l'on souhaite se connecter à un serveur *via* SSH, l'authentification repose par défaut sur un nom d'utilisateur (`user`) et un mot de passe (`passphrase`). Cependant, les mots de passe sont à la fois très peu sécurisés, difficiles à retenir et pénibles à écrire : ils ne sont efficaces face aux ordinateurs qu'à la condition d'être très contraignants, voire inutilisables, pour les humains.

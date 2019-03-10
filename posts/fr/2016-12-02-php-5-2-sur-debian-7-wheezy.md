@@ -1,5 +1,6 @@
 ---
 title: PHP 5.2 sous<br/> Debian 7 <em>Wheezy</em>
+categories: Linux
 ---
 
 Il est parfois nécessaire de ressusciter de vieux codes qui ne fonctionnent qu'avec des versions antiques de PHP. Nous allons ici voir comment installer PHP 5.2 sur Debian 7 *Wheezy*[[car je ne suis pas parvenu à le faire fonctionner sous Debian 8 *Jessie*...]].

@@ -1,5 +1,6 @@
 ---
 title: Obtenir un serveur git <br/>avec <em>Gitolite</em>
+categories: Linux
 ---
 
 Github a permis de populariser *git* et ses concepts au plus grand nombre. Néanmoins, il implique de rendre public tous les codes que vous souhaitez y héberger, sauf si vous achetez un abonnement assez coûteux, et pour un nombre limité de projets. De plus, Github n'est pas libre, et il est donc nécessaire d'y accorder une certaine confiance pour y stocker ses projets.

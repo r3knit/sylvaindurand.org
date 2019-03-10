@@ -1,5 +1,6 @@
 ---
 title: Getting a git server <br/>with <em>Gitolite</em>
+categories: Linux
 ---
 
 Github helped popularize *git* and its concepts to many. Nevertheless, it involves making public all the codes you want to host, unless you buy a fairly expensive subscription, and for a limited number of projects. Moreover, Github is not open, and it is therefore necessary to give it some trust to store its projects.
