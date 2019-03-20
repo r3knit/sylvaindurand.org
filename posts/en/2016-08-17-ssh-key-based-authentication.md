@@ -1,6 +1,7 @@
 ---
 title: SSH key-based <br/> authentication
 categories: Linux
+redirect: /SSH-key-based-authentication/
 ---
 
 When you want to connect to an SSH server, default authentication is based on username and password. However, passwords are quite insecure, difficult to remember and hard to write; they are effective against computers if they are very restrictive, even unusable, for humans.
