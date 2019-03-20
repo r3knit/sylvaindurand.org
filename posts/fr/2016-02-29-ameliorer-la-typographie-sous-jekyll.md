@@ -141,3 +141,15 @@ Si votre site est multilingue[[par exemple sur la base de l'article [Rendre *Jek
 ```
 {% endraw %}
 
+Enfin, pour alléger le code, il est possible d'inclure ces codes dans une page spécifique, par exemple `_includes/typography.html`, pour ne l'inclure que si nécessaire :
+
+{% raw %}
+```liquid
+ {% if page.lang != 'en' %}
+    {% include typography.html %}
+{% else %}
+    {{ content }}
+{% endif %}
+```
+{% endraw %}
+

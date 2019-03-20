@@ -141,3 +141,15 @@ If your website is multilingual[[as explained, for example, in the article [Maki
 ```
 {% endraw %}
 
+Finally, to lighten the code, it is possible to include these codes in a specific page, for example `_includes/typography.html`. Then, we simply use:
+
+{% raw %}
+```liquid
+ {% if page.lang != 'en' %}
+    {% include typography.html %}
+{% else %}
+    {{ content }}
+{% endif %}
+```
+{% endraw %}
+
