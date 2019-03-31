@@ -42,7 +42,7 @@ Another solution is, in the configuration interface of your router or internet b
 If none of these solutions are possible, it is necessary to declare your Raspberry Pi as a DNS server in the network settings of all your devices.
 
 
-Redémarrez votre connexion au réseau : l'interface d'administration de *Pi-hole* devrait désormais être disponible depuis [http://pi.hole](http://pi.hole/).
+Redémarrez votre connexion au réseau : l'interface d'administration de *Pi-hole* devrait désormais être disponible depuis `http://pi.hole/`.
 
 VYou can then declare the blocking lists there to start blocking ads. As an individual, I use the sources of [wally3k](https://wally3k.github.io/) and [tspprs](https://tspprs.com/). You can also block particular sites!
 

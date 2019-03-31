@@ -22,7 +22,7 @@ Les graphiques seront générés à l'aide des fonctions graphiques de base de *
 
 La librairie `rgdal` fournit `readOGR()` qui permet de lire les fichiers shapefiles. L'argument `dsn` doit contenir le chemin vers le dossier contenant les fichiers shapefiles et l'argument `layer` le nom du fichier, sans extension. `readOGR` lira les fichiers `.shp`, `.shx`, `.dbf` et s'il existe le fichier `.prj` qui contient les informations sur la projection utilisée.
 
-Les données utilisées pour les départements sont fournies par l'IGN avec [Geofla](http://professionnels.ign.fr/geofla) :
+Les données utilisées pour les départements sont fournies par l'IGN avec [Geofla](http://professionnels.ign.fr/adminexpress) :
 
 ```r
 # Lecture des départements

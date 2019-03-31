@@ -42,7 +42,7 @@ Une autre solution est, dans l'interface de paramétrage de votre routeur ou vot
 
 Si aucune de ces solutions n'est possible, il est nécessaire de déclarer votre Raspberry Pi comme serveur DNS dans les paramètres réseaux de l'ensemble de vos périphériques.
 
-Redémarrez votre connexion au réseau : l'interface d'administration de *Pi-hole* devrait désormais être disponible depuis [http://pi.hole](http://pi.hole/).
+Redémarrez votre connexion au réseau : l'interface d'administration de *Pi-hole* devrait désormais être disponible depuis `http://pi.hole`.
 
 Vous pouvez alors y déclarer les listes de blocage pour commencer à bloquer des publicités. À titre personnel, j'utilise les sources de [wally3k](https://wally3k.github.io/) et de [tspprs](https://tspprs.com/). Vous pouvez également bloquer des sites particuliers !
 

@@ -21,7 +21,7 @@ Graphics will be plot using _R_ base functions. `ggplot2` is an alternative, but
 
 ### Reading shapefiles
 
-The `rgdal` library provides `readOGR()` in order to read shapefiles. `dsn` must contain the path where shapefiles are located, and `layer` the shapefile name, without extension. `readOGR` reads `.shp`, `.shx`, `.dbf` and `.prj` files. Departements of France are given by [Geofla](http://professionnels.ign.fr/geofla):
+The `rgdal` library provides `readOGR()` in order to read shapefiles. `dsn` must contain the path where shapefiles are located, and `layer` the shapefile name, without extension. `readOGR` reads `.shp`, `.shx`, `.dbf` and `.prj` files. Departements of France are given by [Geofla](http://professionnels.ign.fr/adminexpress):
 
 ```r
 # Reading departements
