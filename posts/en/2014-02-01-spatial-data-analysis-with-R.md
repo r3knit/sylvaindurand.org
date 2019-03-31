@@ -121,7 +121,7 @@ dev.off()
 [![Population density in France]({{ site.data.translations[page.lang].base }}/assets/carto/density.jpg)]({{ site.data.translations[page.lang].base }}/assets/carto/density.pdf)
 
 ## Visualizing an external data : incomes
-The main value is to plot data provided by external files. We will plot the median taxable income per consumption unit ([provided by INSEE](http://www.insee.fr/fr/themes/detail.asp?reg_id=99&ref_id=base-cc-rev-fisc-loc-menage)). [We convert it in CSV]({{ site.data.translations[page.lang].base }}/assets/carto/revenus.csv).
+The main value is to plot data provided by external files. We will plot the median taxable income per consumption unit ([provided by INSEE](https://www.insee.fr/)). [We convert it in CSV]({{ site.data.translations[page.lang].base }}/assets/carto/revenus.csv).
 
 ### Reading and supplementing data
 
