@@ -125,7 +125,7 @@ The main value is to plot data provided by external files. We will plot the medi
 
 ### Reading and supplementing data
 
-Unfortunately, data is missing for more than 5 000 communes, due to tax secrecy. We can "cheat" in order to improve the global render by assigning to those communes the canton (a larger administrative level) median income, given in the [same file](http://www.insee.fr/fr/themes/detail.asp?reg_id=99&ref_id=base-cc-rev-fisc-loc-menage), [converted in CSV]({{ site.data.translations[page.lang].base }}/assets/carto/cantons.csv).
+Unfortunately, data is missing for more than 5 000 communes, due to tax secrecy. We can "cheat" in order to improve the global render by assigning to those communes the canton (a larger administrative level) median income, given in the same file, [converted in CSV]({{ site.data.translations[page.lang].base }}/assets/carto/cantons.csv).
 
 ```r
 # Loading communes data
