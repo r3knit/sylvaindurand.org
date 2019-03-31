@@ -10,12 +10,12 @@ While ad blockers remain highly effective within browsers, advertisements and tr
 Combined with [*PiVPN*](http://www.pivpn.io), it becomes possible to use *Pi-hole* when roaming, from your phone or on a public network, while encrypting all your connections.
 
 {:.large}
-[![PiHole](/assets/raspberry/pihole.png)](/assets/raspberry/pihole.png)
+[![PiHole]({{ site.data.translations[page.lang].base }}/assets/raspberry/pihole.png)]({{ site.data.translations[page.lang].base }}//assets/raspberry/pihole.png)
 
 
 ## Installation of Pi-hole
 
-This article assumes that you have a Raspberry Pi ready to use! If not, you can take a look at how to [install Raspbian](/raspbian-lite-on-raspberry-pi/) ou [Archlinux](/installing-archlinux-on-raspberry-pi/) on your Raspberry Pi.
+This article assumes that you have a Raspberry Pi ready to use! If not, you can take a look at how to [install Raspbian]({{ site.data.translations[page.lang].base }}/raspbian-lite-on-raspberry-pi/) ou [Archlinux]({{ site.data.translations[page.lang].base }}/installing-archlinux-on-raspberry-pi/) on your Raspberry Pi.
 
 It is also important that your router assigns a fixed IP address to the Raspberry Pi, so that it can be declared as a DNS host from your devices.
 

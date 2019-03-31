@@ -31,7 +31,7 @@ PATH=~/bin:$PATH
 
 ### Création d'une clef d'authentification
 
-Nous nous connecterons à *Gitolite* avec une [authentification par clefs SSH](http://localhost:4000/authentification-par-clef-avec-ssh/), à la fois plus simple et plus sécurisée qu'une connexion HTTP. Si vous ne possédez pas déjà de clef, il est nécessaire d'en créer une. Pour cela, on exécute en local :
+Nous nous connecterons à *Gitolite* avec une [authentification par clefs SSH]({{ site.data.translations[page.lang].base }}/authentification-par-clef-avec-ssh/), à la fois plus simple et plus sécurisée qu'une connexion HTTP. Si vous ne possédez pas déjà de clef, il est nécessaire d'en créer une. Pour cela, on exécute en local :
 
 ```none
 cd ~/.ssh

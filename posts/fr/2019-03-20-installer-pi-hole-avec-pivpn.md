@@ -11,12 +11,12 @@ Si les bloqueurs de publicité restent très efficaces au sein des navigateurs, 
 Combiné avec [*PiVPN*](http://www.pivpn.io), il devient possible d'utiliser *Pi-hole* en itinérance, depuis votre téléphone ou sur un réseau public, tout en chiffrant l'intégralité de vos connexions.
 
 {:.large}
-[![PiHole](/assets/raspberry/pihole.png)](/assets/raspberry/pihole.png)
+[![PiHole]({{ site.data.translations[page.lang].base }}/assets/raspberry/pihole.png)]({{ site.data.translations[page.lang].base }}/assets/raspberry/pihole.png)
 
 
 ## Installation de Pi-hole
 
-Cet article suppose que vous avez un Raspberry Pi prêt à l'emploi ! Si ce n'est pas le cas, vous pouvez jeter un coup d'œil sur comment [installer Raspbian](/raspbian-lite-sur-raspberry-pi/) ou [Archlinux](/installer-archlinux-sur-raspberry-pi/) sur votre Raspberry Pi.
+Cet article suppose que vous avez un Raspberry Pi prêt à l'emploi ! Si ce n'est pas le cas, vous pouvez jeter un coup d'œil sur comment [installer Raspbian]({{ site.data.translations[page.lang].base }}/raspbian-lite-sur-raspberry-pi/) ou [Archlinux]({{ site.data.translations[page.lang].base }}/installer-archlinux-sur-raspberry-pi/) sur votre Raspberry Pi.
 
 Il est par ailleurs important que votre routeur attribue une adresse IP fixe au Raspberry Pi, afin de pouvoir le déclarer celui-ci comme hôte DNS depuis vos appareils.
 

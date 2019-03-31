@@ -7,7 +7,7 @@ categories: Jekyll
 
 J<em>ekyll</em> laisse une grande liberté de choix en permettant de mettre simplement en place des fonctionnalités qui ne sont pas prévues par son moteur. C'est notamment le cas lorsque l'on souhaite proposer son site en plusieurs langues : alors que la plupart des CMS sont très rigides ou nécessitent des plugins, quelques filtres suffisent ici pour obtenir le résultat désiré.
 
-Cet article a pour objectif de présenter une façon de créer un site multilingue avec *Jekyll*. Il suppose que celui-ci est bien installé[[l'article [Site statique avec *Jekyll*](/site-statique-avec-jekyll/) décrit comment installer et utiliser *Jekyll* pour obtenir un site simple]] et que vous savez l'utiliser pour générer un site simple.
+Cet article a pour objectif de présenter une façon de créer un site multilingue avec *Jekyll*. Il suppose que celui-ci est bien installé[[l'article [Site statique avec *Jekyll*]({{ site.data.translations[page.lang].base }}/site-statique-avec-jekyll/) décrit comment installer et utiliser *Jekyll* pour obtenir un site simple]] et que vous savez l'utiliser pour générer un site simple.
 
 Vous pourrez trouver un [exemple minimal de site multilingue sous *Jekyll*](https://github.com/sylvaindurand/multilingual-jekyll) hébergé sur [GitHub](https://github.com/sylvaindurand/multilingual-jekyll), basé sur cet article et prêt à l'emploi.
 

@@ -5,7 +5,7 @@ categories: Raspberry Pi
 
 Chromium makes it easy to be started in "kiosk" mode, that is to say to launch in full screen, without any window border, toolbar or notification[[surprisingly, this feature is not offered by Mozilla Firefox]].
 
-This makes it possible to display a presentation, or a page, on a standalone display or on a terminal... or, in my case, to [display a slideshow on my television]((https://github.com/sylvaindurand/reddit-slideshow)) while the Raspberry Pi casts music.
+This makes it possible to display a presentation, or a page, on a standalone display or on a terminal... or, in my case, to [display a slideshow on my television]((https://github.com/sylvaindurand/reddit-slideshow/)) while the Raspberry Pi casts music.
 
 Our goal will be to get:
 

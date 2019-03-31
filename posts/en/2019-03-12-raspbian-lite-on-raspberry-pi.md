@@ -4,7 +4,7 @@ categories: Raspberry Pi
 ---
 
 
-More than four years ago, I wrote an article explaining how to install [ArchLinux on Raspberry Pi](/installing-archlinux-on-raspberry-pi/). I have since migrated to the [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) distribution, based on [Debian](https://www.debian.org) and made specifically for the Raspberry Pi.
+More than four years ago, I wrote an article explaining how to install [ArchLinux on Raspberry Pi]({{ site.data.translations[page.lang].base }}/installing-archlinux-on-raspberry-pi/). I have since migrated to the [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) distribution, based on [Debian](https://www.debian.org) and made specifically for the Raspberry Pi.
 
 Historically very large, because it has a graphic interface and several specific software, *Raspbian* now exists in a *Light* version that allows you to limit the packages to the essentials, to manage your Raspberry Pi from the command line.
 
@@ -12,7 +12,7 @@ This article is a small personal memo on the steps to install and secure *Raspbi
 
 
 {:.large}
-![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0](/assets/raspberry/raspberrypi.svg)
+![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Downloading
 

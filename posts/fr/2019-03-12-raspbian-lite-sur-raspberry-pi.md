@@ -4,14 +4,14 @@ categories: Raspberry Pi
 ---
 
 
-Il y a plus de quatre ans, j'ai rédigé un article expliquant comment installer [ArchLinux sur Raspberry Pi](/installer-archlinux-sur-raspberry-pi/). J'ai depuis migré vers la distribution [Raspbian](https://www.raspberrypi.org/downloads/raspbian/), basée sur [Debian](https://www.debian.org) et réalisée spécifiquement pour le Raspberry Pi.
+Il y a plus de quatre ans, j'ai rédigé un article expliquant comment installer [ArchLinux sur Raspberry Pi]({{ site.data.translations[page.lang].base }}/installer-archlinux-sur-raspberry-pi/). J'ai depuis migré vers la distribution [Raspbian](https://www.raspberrypi.org/downloads/raspbian/), basée sur [Debian](https://www.debian.org) et réalisée spécifiquement pour le Raspberry Pi.
 
 Historiquement très volumineuse, car embarquant une interface graphique et plusieurs logiciels spécifiques, *Raspbian* existe désormais dans une version *Light* qui permet de se limiter au strict essentiel, pour gérer son Raspberry Pi en ligne de commandes.
 
 Cet article constitue un petit mémo personnel sur les étapes permettant d'installer et de sécuriser *Raspbian* pour avoir un Raspberry Pi prêt à l'emploi, utilisable *via* ligne de commande avec SSH.
 
 {:.large}
-![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0](/assets/raspberry/raspberrypi.svg)
+![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Téléchargement
 

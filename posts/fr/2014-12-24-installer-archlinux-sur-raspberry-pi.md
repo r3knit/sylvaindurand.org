@@ -17,7 +17,7 @@ Ainsi, pour suivre ce tutoriel, vous n'aurez besoin que de  :
 * un _câble éthernet_ pour brancher notre Pi à notre routeur.
 
 {:.large}
-![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0](/assets/raspberry/raspberrypi.svg)
+![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Installer *Archlinux*
 Parmi les nombreuses distributions disponibles pour Raspberry Pi, nous allons utiliser *[ArchLinux](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, en raison de sa légereté et de l'écosystème très complet qui s'est bâti autour d'elle.

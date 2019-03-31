@@ -131,7 +131,7 @@ Finalement, le code suivant permet d'obtenir toutes les améliorations typograph
 ```
 {% endraw %}
 
-Si votre site est multilingue[[par exemple sur la base de l'article [Rendre *Jekyll* multilingue](/rendre-jekyll-multilingue/)]], vous pouvez n'appliquer ces modifications que sur les pages françaises en plaçant, autour des parties concernées :
+Si votre site est multilingue[[par exemple sur la base de l'article [Rendre *Jekyll* multilingue]({{ site.data.translations[page.lang].base }}/rendre-jekyll-multilingue/)]], vous pouvez n'appliquer ces modifications que sur les pages françaises en plaçant, autour des parties concernées :
 
 {% raw %}
 ```liquid

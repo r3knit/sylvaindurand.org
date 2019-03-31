@@ -7,7 +7,7 @@ categories: Jekyll
 
 J<em>ekyll</em> has a very flexible design that allows a great freedom of choice, allowing the user to simply introduce features that are not integrated into its engine. This is particularly the case when one wants to create a multilingual website: while CMS remain very rigid and often require plugins, few filters are sufficient to achieve it with _Jekyll_.
 
-This article aims to present a way to create a multilingual site with _Jekyll_. It has to be installed[[the article [Static website with *Jekyll*](/static-website-with-jekyll/) explains how to install and use *Jekyll* in order to get a simple website]] on your computer and you should be able to know how to generate a simple website.
+This article aims to present a way to create a multilingual site with _Jekyll_. It has to be installed[[the article [Static website with *Jekyll*]({{ site.data.translations[page.lang].base }}/static-website-with-jekyll/) explains how to install and use *Jekyll* in order to get a simple website]] on your computer and you should be able to know how to generate a simple website.
 
 You'll find a [minimal example of multilingual site in Jekyll](https://github.com/sylvaindurand/multilingual-jekyll) hosted on [GitHub](https://github.com/sylvaindurand/multilingual-jekyll), based on this article and ready to use.
 

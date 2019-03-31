@@ -17,7 +17,7 @@ So for this tutorial, you'll only need:
 * an _ethernet cable_ to connect our Pi to our router.
 
 {:.large}
-![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0](/assets/raspberry/raspberrypi.svg)
+![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Installing *Archlinux*
 Among the many distributions available for Raspberry Pi, we will use *[ArchLinux](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, due to its lightness and comprehensive ecosystem that has been built around it.
