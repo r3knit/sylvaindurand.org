@@ -9,7 +9,7 @@ In the previous articles, we saw how to [create a static website with *Jekyll*](
 
 * synchronize your website with `git` on [*GitHub*](https://github.com/) ;
 * generate and serve it on the fly with [*GitHub Pages*](https://pages.github.com/) ;
-* write articles directly on line thanks to [*Prose*](http://prose.io/) ;
+* write articles directly on line thanks to [*Prose*](https://prose.io/) ;
 * test compilations, HTML validity and links with [*Travis*](https://travis-ci.org/).
 
 ## Hosting our website on *GitHub*
@@ -66,7 +66,7 @@ git commit -m "First version"
 git push
 ```
 
-Because the website only use simple text files, you can use *git* as you would do with any other project. Many references exists if you are not familiar with `git`[[for example, you can read [Git, a simple guide](http://rogerdudler.github.io/git-guide/) for a short introduction, or the more complete [Pro Git](http://git-scm.com/book) book]].
+Because the website only use simple text files, you can use *git* as you would do with any other project. Many references exists if you are not familiar with `git`[[for example, you can read [Git, a simple guide](https://rogerdudler.github.io/git-guide/) for a short introduction, or the more complete [Pro Git](https://git-scm.com/book/en/v2) book]].
 
 ## Serving *Jekyll* on *GitHub Pages*
 
@@ -95,7 +95,7 @@ The `bundle exec jekyll serve` command will now generate the website exactly as 
 ### Activating *GitHub Pages*
 Back on *GitHub*, go in the `username.github.io` repository, choose `Settings`, then the `GitHub Pages` section in order to activate the website generation.
 
-Within a few moments (the first time, it can take a dozen of minutes, but then the website will be generated in a couple of seconds each time you push a commit), your website will be available on `http://username.github.io`[[it is also available in HTTPS on `https://username.github.io`]].
+Within a few moments (the first time, it can take a dozen of minutes, but then the website will be generated in a couple of seconds each time you push a commit), your website will be available on `https://username.github.io.
 
 ### Using a custom domain name
 If you have a custom domain name "`domain.tld`", it is of course possible to use it instead of the default URL given by *GitHub*, which will then redirect to the new domain name. However, it won't be possible to use HTTPS[[if you try to go to ``https://domain.tld`, you will get a blank page showing `unknown domain: domain.tld`]].
@@ -121,9 +121,9 @@ This page must have been removed or had its name changed.
 ### Writing and editing your articles online with *Prose*
 One of the main disadvantages of static websites is the impossibility to edit them online without your computer.
 
-Because your website is hosted on *GitHub*, it is possible to modify files directly online. Jekyll generates *Pages* each time you modify a page. You can also use the *[Prose.io](http://prose.io/)* website, which provides a nice interface, a great syntax highlighting and a preview system in order to write your articles.
+Because your website is hosted on *GitHub*, it is possible to modify files directly online. Jekyll generates *Pages* each time you modify a page. You can also use the *[Prose.io](https://prose.io/)* website, which provides a nice interface, a great syntax highlighting and a preview system in order to write your articles.
 
-On the *[Prose.io](http://prose.io/)* website, use your *GitHub* login information and allow *Prose* to see and change your repositories. You can then create and edit your articles, or any other file of the website.
+On the *[Prose.io](https://prose.io/)* website, use your *GitHub* login information and allow *Prose* to see and change your repositories. You can then create and edit your articles, or any other file of the website.
 
 ### Using *Travis* to check your website
 

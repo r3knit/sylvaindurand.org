@@ -170,7 +170,7 @@ And:
 ### Translation of website elements
 Around the articles, it is also necessary to translate the various elements like menus, header, footer, some titles...
 
-To do so, we can provide translations into `_config.yml`[[since *Jekyll* 2.0, it is also possible to put the translations in the [_data](http://jekyllrb.com/docs/datafiles/) folder]]. Then, in the following example, {% raw %}`{{ site.t[page.lang].home }}`{% endraw %} will generate `Home`, `Accueil` or `首页` depending of the page language:
+To do so, we can provide translations into `_config.yml`[[since *Jekyll* 2.0, it is also possible to put the translations in the [_data](https://jekyllrb.com/docs/datafiles/) folder]]. Then, in the following example, {% raw %}`{{ site.t[page.lang].home }}`{% endraw %} will generate `Home`, `Accueil` or `首页` depending of the page language:
 
 ```yml
 t:

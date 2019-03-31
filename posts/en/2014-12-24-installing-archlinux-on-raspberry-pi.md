@@ -20,14 +20,14 @@ So for this tutorial, you'll only need:
 ![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Installing *Archlinux*
-Among the many distributions available for Raspberry Pi, we will use *[ArchLinux](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, due to its lightness and comprehensive ecosystem that has been built around it.
+Among the many distributions available for Raspberry Pi, we will use *[ArchLinux](https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, due to its lightness and comprehensive ecosystem that has been built around it.
 
 ### Downloading
 
-Start by retrieving the latest version of *Archlinux*. An [image](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip) is offered on the Raspberry Pi site[[at the time of writing this article, the last image has been published in this format on June 2014; however, we will update the system once it is installed]]. Download it, and then extract it:
+Start by retrieving the latest version of *Archlinux*. An [image](https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip) is offered on the Raspberry Pi site[[at the time of writing this article, the last image has been published in this format on June 2014; however, we will update the system once it is installed]]. Download it, and then extract it:
 
 ```none
-curl -OL http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip
+curl -OL https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip
 unzip ArchLinuxARM-2014.06-rpi.img.zip
 ```
 
@@ -51,7 +51,7 @@ sudo diskutil eject /dev/disk2
 We can then eject the SD card and insert it into your Raspberry Pi. Connect it to our network, and then put it on.
 
 ## Connecting to the Raspberry Pi
-We will access our Raspberry Pi from our computer, using SSH. Users of macOS or Linux can directly launch `ssh`, while those of Windows prefer to use a program like [*PuTTY*](http://www.putty.org/). Otherwise, it is possible to connect a USB keyboard and connect the Raspberry Pi to a monitor using its HDMI port.
+We will access our Raspberry Pi from our computer, using SSH. Users of macOS or Linux can directly launch `ssh`, while those of Windows prefer to use a program like [*PuTTY*](https://putty.org/). Otherwise, it is possible to connect a USB keyboard and connect the Raspberry Pi to a monitor using its HDMI port.
 
 Like any computer, the Raspberry Pi is identified on the network by its IP address. For us to connect, it is necessary to know it.
 

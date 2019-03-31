@@ -5,7 +5,7 @@ categories: Linux
 
 Sometimes you need to bring back to life old lines of code which will only works with old PHP versions. We will here see how to install PHP 5.2 on Debian 7 *Wheezy*[[because I couldn't get it work on Debian 8 *Jessie*...]].
 
-PHP 5.2 end of life occured in [January 2011](http://php.net/eol.php); thus it is obviously a very bad idea to install it on a production environment, for obvious security reasons.
+PHP 5.2 end of life occured in [January 2011](https://www.php.net/eol.php); thus it is obviously a very bad idea to install it on a production environment, for obvious security reasons.
 
 ## Sources
 

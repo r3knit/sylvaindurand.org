@@ -42,7 +42,7 @@ europe <- europe[europe$REGION_UN=="Europe",]
 
 ### Projection and plot
 
-The map will use the [French official projection](http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000387816&fastPos=1&fastReqId=2039166907&categorieLien=cid&oldAction=rechTexte), already declared in the Geofla `.prj` files. `spTransform` will be used for the European coutries.
+The map will use the [French official projection](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000387816&fastPos=1&fastReqId=2039166907&categorieLien=cid&oldAction=rechTexte), already declared in the Geofla `.prj` files. `spTransform` will be used for the European coutries.
 
 Then, we will first plot French boundaries, in order to center the map on France. Borders colors are defined in `border`, their tickness in `lwd` and the filling color in `col`.
 
@@ -225,7 +225,7 @@ bbox        <- readOGR(dsn="shp/ne/physical",layer="ne_110m_wgs84_bounding_box")
 
 ### Projection and plot
 
-We will use the _[Winkel Tripel](http://fr.wikipedia.org/wiki/Projection_de_Winkel-Tripel)_ projection:
+We will use the _[Winkel Tripel](https://fr.wikipedia.org/wiki/Projection_de_Winkel-Tripel)_ projection:
 
 ```r
 # Winkel Tripel projection

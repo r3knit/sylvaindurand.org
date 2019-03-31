@@ -5,30 +5,30 @@ categories: Jekyll
 
 Au commencement d'Internet étaient les *sites statiques* : chaque page web était rédigée "à la main" à l'aide d'un éditeur de texte, puis mise en ligne. Les inconvénients étaient nombreux, en particulier la nécessité de dupliquer une même modification sur chaque page concernée[[il en découlait une  réelle difficulté à faire évoluer un site sur le long terme]], de connaître le HTML pour le rédacteur et d'avoir son ordinateur à disposition pour éditer les pages. L'apparition du CSS, permettant de séparer la forme du fond et de mutualiser celle-ci pour l'ensemble d'un même site n'a guère changé cet état de fait[[de surcroît, la très faible interopérabilité entre navigateurs et le très mauvais support de CSS par Microsoft Internet Explorer, alors très dominant, ont fortement retardé son utilisation]].
 
-C'est alors que sont apparus les *sites dynamiques* : les langages de programmation exécutés côté serveur, tels que PHP, ont permis de voir apparaître les [CMS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu), qui rendaient possible la création de sites et la modification de leur contenu directement depuis un navigateur, permettant ainsi l'émergence de sites, blogs, forums accessibles au plus grand nombre. C'est par exemple le cas de [*Spip*](http://www.spip.net/), [*Dotclear*](http://fr.dotclear.org/) ou [*WordPress*](https://fr.wordpress.com/). Pourtant, ces systèmes ne sont pas dénués d'inconvénients :
+C'est alors que sont apparus les *sites dynamiques* : les langages de programmation exécutés côté serveur, tels que PHP, ont permis de voir apparaître les [CMS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu), qui rendaient possible la création de sites et la modification de leur contenu directement depuis un navigateur, permettant ainsi l'émergence de sites, blogs, forums accessibles au plus grand nombre. C'est par exemple le cas de [*Spip*](https://www.spip.net/), [*Dotclear*](https://fr.dotclear.org/) ou [*WordPress*](https://fr.wordpress.com/). Pourtant, ces systèmes ne sont pas dénués d'inconvénients :
 
 - ils sont très sensibles aux failles de sécurité, ce qui implique de surveiller attentivement les mises à jour et les logs ;
 - ils sont consommateurs de ressources serveur, nécessitant des hébergements spécifiques pour les gros volumes de visiteurs ;
 - ils supportent mal les montées en charge, et sont ainsi très sensibles aux attaques DDoS ou aux affluences de visiteurs[[il n'est pas rare qu'un site devienne indisponible, par exemple lors d'un événement important ou en raison d'un lien publié sur un site d'actualités]] ;
 - ils constituent souvent de vraies usines à gaz, surdimensionnées vis-à-vis des besoins et nécessitant des bases de données.
 
-Depuis quelques années, les *sites statiques* font leur retour en grâce avec l'apparition des *générateurs de sites statiques*. Sur la base de simples fichiers textes, un programme génère un site composé uniquement de pages statiques qu'il suffit ensuite d'héberger. Ainsi, les problèmes de sécurité sont presque inexistants, il est possible de s'héberger sur un serveur très modeste ou au contraire d'obtenir d'excellentes performances et de supporter de très fortes montées en charge en utilisant un [CDN](https://fr.wikipedia.org/wiki/Content_delivery_network) comme [*Cloudflare*](https://www.cloudflare.com/) ou [*Cloudfront*](http://aws.amazon.com/fr/cloudfront/)[[les façons d'héberger un site statique sur [*Amazon S3*](http://aws.amazon.com/fr/s3/) et [*Cloudfront*](http://aws.amazon.com/fr/cloudfront/) sont détaillés dans "[Site statique avec *Cloudfront*]({{ site.data.translations[page.lang].base }}/site-statique-avec-cloudfront/)"]].
+Depuis quelques années, les *sites statiques* font leur retour en grâce avec l'apparition des *générateurs de sites statiques*. Sur la base de simples fichiers textes, un programme génère un site composé uniquement de pages statiques qu'il suffit ensuite d'héberger. Ainsi, les problèmes de sécurité sont presque inexistants, il est possible de s'héberger sur un serveur très modeste ou au contraire d'obtenir d'excellentes performances et de supporter de très fortes montées en charge en utilisant un [CDN](https://fr.wikipedia.org/wiki/Content_delivery_network) comme [*Cloudflare*](https://www.cloudflare.com/) ou [*Cloudfront*](https://aws.amazon.com/fr/cloudfront/)[[les façons d'héberger un site statique sur [*Amazon S3*](https://aws.amazon.com/fr/s3/) et [*Cloudfront*](https://aws.amazon.com/fr/cloudfront/) sont détaillés dans "[Site statique avec *Cloudfront*]({{ site.data.translations[page.lang].base }}/site-statique-avec-cloudfront/)"]].
 
-Il est de plus possible de suivre toutes les modifications et de travailler collaborativement grâce à `git`, de rédiger ses articles en ligne et de générer son site à la volée à l'aide de services comme [*GitHub*](https://pages.github.com/) et [*Prose*](http://prose.io), ou d'avoir un système de commentaires avec [*Disqus*](https://disqus.com/).
+Il est de plus possible de suivre toutes les modifications et de travailler collaborativement grâce à `git`, de rédiger ses articles en ligne et de générer son site à la volée à l'aide de services comme [*GitHub*](https://pages.github.com/) et [*Prose*](https://prose.io), ou d'avoir un système de commentaires avec [*Disqus*](https://disqus.com/).
 
-Dans cet article, nous allons voir comment installer (I) et utiliser (II) le générateur de site statiques [*Jekyll*](http://jekyllrb.com/) pour créer et modifier un site simple.
+Dans cet article, nous allons voir comment installer (I) et utiliser (II) le générateur de site statiques [*Jekyll*](https://jekyllrb.com/) pour créer et modifier un site simple.
 
 ## Premier site avec *Jekyll*
 
 ### Installation de *Jekyll*
 
-Pour installer Jekyll, après avoir installé *Ruby*, par exemple avec [RVM](http://rvm.io/), lancez simplement la commande suivante :
+Pour installer Jekyll, après avoir installé *Ruby*, par exemple avec [RVM](https://rvm.io/), lancez simplement la commande suivante :
 
 ```none
 gem install jekyll
 ```
 
-*Sur Windows*, l'installation est moins aisée ; [Julian Thilo](http://jekyll-windows.juthilo.com/) a écrit un [guide très détaillé](http://jekyll-windows.juthilo.com/) sur les façons d'y installer *Jekyll*.
+*Sur Windows*, l'installation est moins aisée ; [Julian Thilo](https://jekyll-windows.juthilo.com/) a écrit un [guide très détaillé](https://jekyll-windows.juthilo.com/) sur les façons d'y installer *Jekyll*.
 
 ### Création d'un nouveau site
 
@@ -42,7 +42,7 @@ Le code source d'un site *Jekyll* s'organise selon plusieurs dossiers :
 
 - *`_posts/`* dans lequel seront placés[[l'arborence interne du dossier `_post` est laissée entièrement libre]] tous les articles de votre site, au format `aaaa-mm-jj-nom-du-post.md` ;
 - *`_layouts/`* qui va contenir la maquette du site, c'est-à-dire tout ce qui entourera nos articles ;
--  *`_includes/`*, qui contiendra des codes que vous pouvez inclure[[en plaçant un fichier dans `_includes`, il vous sera possible de l'importer n'importe où avec {% raw %}`{{ include nom-du-fichier }}`{% endraw %} ; il est même possible de lui passer des [paramètres](http://jekyllrb.com/docs/templates/#includes)]] dans différentes pages si vous en avez besoin régulièrement.
+-  *`_includes/`*, qui contiendra des codes que vous pouvez inclure[[en plaçant un fichier dans `_includes`, il vous sera possible de l'importer n'importe où avec {% raw %}`{{ include nom-du-fichier }}`{% endraw %} ; il est même possible de lui passer des [paramètres](https://jekyllrb.com/docs/templates/#includes)]] dans différentes pages si vous en avez besoin régulièrement.
 
 Le répertoire de votre site pourra alors ressembler à :
 
@@ -98,7 +98,7 @@ defaults:
 
 ### Écriture des articles avec *Markdown*
 
-Par défaut, les articles s'écrivent en [*Markdown*](http://daringfireball.net/projects/markdown/basics). L'objectif de ce langage est de proposer une syntaxe très simple permettant de rédiger les articles en évitant les balises HTML les plus courantes. Ainsi, "*italique*" s'obtient avec `*italique*`, et "**gras**" avec `**gras**`. Il reste cependant toujours possible d'utiliser HTML au sein des articles.
+Par défaut, les articles s'écrivent en [*Markdown*](https://daringfireball.net/projects/markdown/basics). L'objectif de ce langage est de proposer une syntaxe très simple permettant de rédiger les articles en évitant les balises HTML les plus courantes. Ainsi, "*italique*" s'obtient avec `*italique*`, et "**gras**" avec `**gras**`. Il reste cependant toujours possible d'utiliser HTML au sein des articles.
 
 Depuis sa deuxième version, *Jekyll* utilise *Kramdown* qui ajoute de nombreuses fonctionnalités telles que la possibilité d'attribuer des classes aux éléments, les notes de bas de page, les listes de définition, les tableaux...
 
@@ -129,13 +129,13 @@ Nous pouvons aussi, par exemple, effectuer des boucles sur l'ensemble des articl
 ```
 {% endraw %}
 
-Bien que la [syntaxe](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) ne soit pas toujours très élégante à utiliser, le grande nombre de [variables disponibles](http://jekyllrb.com/docs/variables/), auxquelles s'ajoutent les métadonnées personnalisées que vous créerez ainsi que les nombreux [filtres et commandes](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers), peuvent être extrêmement efficaces.
+Bien que la [syntaxe](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) ne soit pas toujours très élégante à utiliser, le grande nombre de [variables disponibles](https://jekyllrb.com/docs/variables/), auxquelles s'ajoutent les métadonnées personnalisées que vous créerez ainsi que les nombreux [filtres et commandes](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers), peuvent être extrêmement efficaces.
 
 ---
 
 ### Et bien plus...
 
-Cet article n'a pas prétention à constituer davantage qu'une très brève introduction à *Jekyll*. Pour personnaliser votre site davantage, lisez en priorité l'[excellente documentation de *Jekyll*](http://jekyllrb.com/docs/home/), bien tenue à jour, ainsi que les nombreuses références que vous trouverez sur Internet.
+Cet article n'a pas prétention à constituer davantage qu'une très brève introduction à *Jekyll*. Pour personnaliser votre site davantage, lisez en priorité l'[excellente documentation de *Jekyll*](https://jekyllrb.com/docs/home/), bien tenue à jour, ainsi que les nombreuses références que vous trouverez sur Internet.
 
 Vous pouvez également consulter sur ce site trois autres articles à propos de *Jekyll* :
 

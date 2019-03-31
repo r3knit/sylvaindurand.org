@@ -107,4 +107,4 @@ Cependant, je n'ai pas réussi à trouver si ce comportement est une fonctionnal
 
 ## Compresser l'ensemble du code HTML généré
 
-Jetez un coup d'œil à la méthode développée par [penibelst](http://jch.penibelst.de/), très intelligente et qui comporte de nombreuses options.
+Jetez un coup d'œil à la méthode développée par [penibelst](https://jch.penibelst.de), très astucieuse et qui comporte de nombreuses options.

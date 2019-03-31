@@ -7,18 +7,18 @@ categories: Jekyll
 
 Les sites statiques ont pour principal intérêt de pouvoir être stockés dans le *nuage*, c'est-à-dire sur des serveurs de contenu permettant de les délivrer très rapidement, à moindre coût, avec une fiabilité et une sécurité extraordinaire.
 
-Ce billet montrera comment un site statique[[qu'il soit produit par un générateur comme [*Jekyll*](http://jekyllrb.com), [*Pelican*](http://docs.getpelican.com/) ou encore [*Hyde*](http://hyde.github.io), ou réalisé à la main]] peut être hébergé sur les [services web d'*Amazon*](http://aws.amazon.com/fr/) (*AWS*), et notamment hébergé sur [*S3*](http://aws.amazon.com/fr/s3/) et servi à l'aide de [*Cloudfront*](http://aws.amazon.com/fr/cloudfront/). De cette façon, le site sera disponible très rapidement depuis n'importe où, supportera n'importe quelle montée en charge, sans préoccupation de maintenance ou de sécurité, et cela à un coût presque nul[[avec un faible trafic, il ne vous en coûtera qu'environ un dollar]].
+Ce billet montrera comment un site statique[[qu'il soit produit par un générateur comme [*Jekyll*](https://jekyllrb.com), [*Pelican*](https://blog.getpelican.com) ou encore [*Hyde*](https://hyde.github.io), ou réalisé à la main]] peut être hébergé sur les [services web d'*Amazon*](https://aws.amazon.com/fr/) (*AWS*), et notamment hébergé sur [*S3*](https://aws.amazon.com/fr/s3/) et servi à l'aide de [*Cloudfront*](https://aws.amazon.com/fr/cloudfront/). De cette façon, le site sera disponible très rapidement depuis n'importe où, supportera n'importe quelle montée en charge, sans préoccupation de maintenance ou de sécurité, et cela à un coût presque nul[[avec un faible trafic, il ne vous en coûtera qu'environ un dollar]].
 
 Nous utiliserons pour cela :
 
-* [*S3*](http://aws.amazon.com/fr/s3/) pour héberger les fichiers avec une haute disponibilité ;
-* [*Cloudfront*](http://aws.amazon.com/fr/cloudfront/) pour servir les données avec une latence minimale ;
-* [*Route 53*](http://aws.amazon.com/fr/route53/) pour utiliser notre propre nom de domaine ;
-* [*Awstats*](http://awstats.sourceforge.net/) pour analyser les statistiques de notre site.
+* [*S3*](https://aws.amazon.com/fr/s3/) pour héberger les fichiers avec une haute disponibilité ;
+* [*Cloudfront*](https://aws.amazon.com/fr/cloudfront/) pour servir les données avec une latence minimale ;
+* [*Route 53*](https://aws.amazon.com/fr/route53/) pour utiliser notre propre nom de domaine ;
+* [*Awstats*](https://awstats.sourceforge.io) pour analyser les statistiques de notre site.
 
 ## Hébergement sur *S3*
 
-Après avoir créé un compte [*AWS*](http://aws.amazon.com/fr/), allons dans la [console](https://console.aws.amazon.com/) puis dans [*S3*](https://console.aws.amazon.com/s3/) : ce service nous permettra de stocker les fichiers du site internet.
+Après avoir créé un compte [*AWS*](https://aws.amazon.com/fr/), allons dans la [console](https://console.aws.amazon.com/) puis dans [*S3*](https://console.aws.amazon.com/s3/) : ce service nous permettra de stocker les fichiers du site internet.
 
 ### Création des *buckets*
 Dans notre exemple, les pages seront accessibles depuis l'adresse `www.domain.tld`. Pour éviter de perdre des utilisateurs, la racine `domain.tld` redirigera vers celle-ci. Créons deux buckets (avec `Create bucket`) portant exactement ces mêmes noms  : `www.domain.tld` et `domain.tld`.
@@ -35,7 +35,7 @@ C'est tout ! Depuis l'adresse `Endpoint`, on peut observer tous les fichiers sto
 
 *S3* permet de stocker les données, mais celles-ci ne sont présentes qu'à un endroit unique. Des données stockées à Dublin en Irlande pourront sembler relativement rapides pour un utilisateur à Paris (environ 200 ms de chargement pour l'accueil de ce site) mais moins à New-York (500 ms) ou à Shanghai (1<span style="white-space:nowrap">&thinsp;</span>300 ms).
 
-*Amazon Cloudfront* est un [CDN](http://fr.wikipedia.org/wiki/Content_delivery_network), et permet donc de rapprocher géographiquement nos données de ceux qui vont venir visiter notre site : les données stockées sur *Amazon S3* sont dupliquées sur différentes machines éparpillées dans le monde. Cela permet de réduire fortement le temps d'accès : environ 100 ms à Paris, à New-York ou à Shanghai pour ce site.
+*Amazon Cloudfront* est un [CDN](https://fr.wikipedia.org/wiki/Content_delivery_network), et permet donc de rapprocher géographiquement nos données de ceux qui vont venir visiter notre site : les données stockées sur *Amazon S3* sont dupliquées sur différentes machines éparpillées dans le monde. Cela permet de réduire fortement le temps d'accès : environ 100 ms à Paris, à New-York ou à Shanghai pour ce site.
 
 En contrepartie, il existe un délai de propagation entre le moment où vous effectuez des modifications sur vos fichiers stockés sur *S3* et lorsque celles-ci seront mises à jour sur *Cloudfront*. Nous verrons dans la dernière partie comment automatiquement indiquer à *Cloudfront* que les données sont à mettre à jour, ce qui réduit ce laps de temps à quelques minutes.
 
@@ -193,7 +193,7 @@ Il suffit alors d'exécuter la commande `sh _deploy.sh` pour mettre à jour notr
 
 ## Statistiques
 
-Bien que notre site soit statique et servi par un serveur de contenu, il est tout à fait possible d'analyser les logs si l'on ne souhaite pas utiliser de système basé sur un code javascript, tel [Piwik](http://piwik.org/) ou [Google Analytics](https://www.google.fr/intl/fr/analytics/). Ici, nous automatiserons la tâche (récupération des logs, traitement et affichage des statistiques) depuis un serveur (dans notre exemple, un Raspberry Pi sous Raspbian) et nous utiliserons [*Awstats*](http://awstats.sourceforge.net/).
+Bien que notre site soit statique et servi par un serveur de contenu, il est tout à fait possible d'analyser les logs si l'on ne souhaite pas utiliser de système basé sur un code javascript, tel [Matomo](https://matomo.org) ou [Google Analytics](https://www.google.fr/intl/fr/analytics/). Ici, nous automatiserons la tâche (récupération des logs, traitement et affichage des statistiques) depuis un serveur (dans notre exemple, un Raspberry Pi sous Raspbian) et nous utiliserons [*Awstats*](https://awstats.sourceforge.io).
 
 ### Récupération des logs
 

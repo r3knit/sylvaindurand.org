@@ -108,4 +108,4 @@ However, I couldn't find if this behaviour is wanted by *Liquid* developers, and
 
 ## Compress *Jekyll* HTML output
 
-Have a look to the clever [penibelst](http://jch.penibelst.de/) method, which provides many options.
+Have a look to the clever [penibelst](https://jch.penibelst.de) method, which provides many options.

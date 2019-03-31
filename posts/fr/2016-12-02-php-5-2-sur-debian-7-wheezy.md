@@ -5,7 +5,7 @@ categories: Linux
 
 Il est parfois nécessaire de ressusciter de vieux codes qui ne fonctionnent qu'avec des versions antiques de PHP. Nous allons ici voir comment installer PHP 5.2 sur Debian 7 *Wheezy*[[car je ne suis pas parvenu à le faire fonctionner sous Debian 8 *Jessie*...]].
 
-PHP 5.2 n'étant plus maintenu [depuis 2011](http://php.net/eol.php), il est évidemment très déconseillé de l'installer sur un serveur de production, en raison des nombreuses failles de sécurité qu'il comporte.
+PHP 5.2 n'étant plus maintenu [depuis 2011](https://www.php.net/eol.php), il est évidemment très déconseillé de l'installer sur un serveur de production, en raison des nombreuses failles de sécurité qu'il comporte.
 
 
 

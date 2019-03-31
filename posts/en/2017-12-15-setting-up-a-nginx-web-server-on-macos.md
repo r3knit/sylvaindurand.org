@@ -15,7 +15,7 @@ We will see how to install *Nginx*, PHP-FPM and *MariaDB* (MySQL) on macOS *High
 
 *HomeBrew* is a package manager for macOS, that allows to easily install various Unix applications.
 
-To install, simply execute the command shown on the [official website](http://brew.sh):
+To install, simply execute the command shown on the [official website](https://brew.sh):
 
 ```none
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

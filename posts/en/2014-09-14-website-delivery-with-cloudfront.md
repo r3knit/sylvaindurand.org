@@ -7,17 +7,17 @@ categories: Jekyll
 
 The main interest of static website is to be able to be stored in the *cloud*, that is to say on a content delivery network able to serve our data with amazing performances, a very low cost, and multiple benefits in terms of lightness, safety and reliability.
 
-This article sets out to show how to host a static website[[wether built from a generator like [*Jekyll*](http://jekyllrb.com), [*Pelican*](http://docs.getpelican.com/) or [*Hyde*](http://hyde.github.io), or "by hand"]] on [*Amazon Web Services*](http://aws.amazon.com), especially [*Amazon S3*](http://aws.amazon.com/s3/) in order to store the website files, and [*CloudFront*](http://aws.amazon.com/cloudfront/) in order to deliver them. The main purpose is to be able to get a website fast from anywhere, reliable, secure, highly scalable and inexpensive[[with a low traffic, the hosting will cost you about one dollar a month]].
+This article sets out to show how to host a static website[[wether built from a generator like [*Jekyll*](https://jekyllrb.com), [*Pelican*](https://blog.getpelican.com) or [*Hyde*](https://hyde.github.io), or "by hand"]] on [*Amazon Web Services*](https://aws.amazon.com), especially [*Amazon S3*](https://aws.amazon.com/fr/) in order to store the website files, and [*CloudFront*](https://aws.amazon.com/fr/cloudfront/) in order to deliver them. The main purpose is to be able to get a website fast from anywhere, reliable, secure, highly scalable and inexpensive[[with a low traffic, the hosting will cost you about one dollar a month]].
 
 To this purpose, we will use:
 
-* [*S3*](http://aws.amazon.com/s3/) in order to store the website;
-* [*CloudFront*](http://aws.amazon.com/cloudfront/) in order to deliver our data;
-* [*Route 53*](http://aws.amazon.com/route53/) in order to use our domain name.
-* [*Awstats*](http://awstats.sourceforge.net/) in order to analyse the logs.
+* [*S3*](https://aws.amazon.com/s3/) in order to store the website;
+* [*CloudFront*](https://aws.amazon.com/cloudfront/) in order to deliver our data;
+* [*Route 53*](https://aws.amazon.com/route53/) in order to use our domain name.
+* [*Awstats*](https://awstats.sourceforge.io) in order to analyse the logs.
 
 ## Hosting on *S3*
-After having created an [*AWS*](http://aws.amazon.com/) account, go to the [management console](https://console.aws.amazon.com/), then to [*S3*](https://console.aws.amazon.com/s3/): this service will store the website files.
+After having created an [*AWS*](https://aws.amazon.com/) account, go to the [management console](https://console.aws.amazon.com/), then to [*S3*](https://console.aws.amazon.com/s3/): this service will store the website files.
 
 ### Creating buckets
 The website will be located on `www.domain.tld`. The domain name root, `domain.tld`, will redirect to this location. Create two buckets (with `Create bucket`) named from the expected URL: `domain.tld` and `www.domain.tld`.
@@ -34,7 +34,7 @@ From `Endpoint` location, we can now see the files hosted in `www.domain.tld` bu
 
 *S3* hosts our data in one unique location. Data stored in Dublin will be provided quite fast to a visitor located in Paris (about 200 ms in order to load the home page of this website) but less in New-York (500 ms) or Shanghai (1,300 ms).
 
-*Amazon CloudFront* is a [CDN](http://fr.wikipedia.org/wiki/Content_delivery_network), serving content to end-users with high availability and high performance. The access time falls below 100 ms in Paris, New-York and Shanghai.
+*Amazon CloudFront* is a [CDN](https://fr.wikipedia.org/wiki/Content_delivery_network), serving content to end-users with high availability and high performance. The access time falls below 100 ms in Paris, New-York and Shanghai.
 
 In return, a propagation delay exists between an upload and its update on *Cloudfront*. We will see in the last part how to notify any modification.
 
@@ -187,7 +187,7 @@ You only have to execute `sh _deploy.sh` to update the website. A few minutes ma
 
 ## Stats
 
-Although our site is static and served by a CDN, it is quite possible to analyze the logs if you do not want to use a system based on a javascript code, such as [Piwik](http://piwik.org/) or [Google Analytics](https://www.google.fr/intl/en/analytics/). Here, we will automate the task (recovery logs, processing and displaying statistics) from a server (in our example, a Raspberry Pi in Raspbian) and we will use [*Awstats*](http://awstats.sourceforge.net/).
+Although our site is static and served by a CDN, it is quite possible to analyze the logs if you do not want to use a system based on a javascript code, such as [Matomo](https://matomo.org) or [Google Analytics](https://www.google.fr/intl/en/analytics/). Here, we will automate the task (recovery logs, processing and displaying statistics) from a server (in our example, a Raspberry Pi in Raspbian) and we will use [*Awstats*](https://awstats.sourceforge.io).
 
 ### Retrieving logs
 

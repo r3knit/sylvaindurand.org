@@ -20,14 +20,14 @@ Ainsi, pour suivre ce tutoriel, vous n'aurez besoin que de  :
 ![Raspberry Pi – Jonathan Rutheiser, CC BY-SA 3.0]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrypi.svg)
 
 ## Installer *Archlinux*
-Parmi les nombreuses distributions disponibles pour Raspberry Pi, nous allons utiliser *[ArchLinux](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, en raison de sa légereté et de l'écosystème très complet qui s'est bâti autour d'elle.
+Parmi les nombreuses distributions disponibles pour Raspberry Pi, nous allons utiliser *[ArchLinux](https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/)*, en raison de sa légereté et de l'écosystème très complet qui s'est bâti autour d'elle.
 
 ### Téléchargement
 
-Commençons par récupérer la dernière version d'*Archlinux*, dont une [image](http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip) est proposée sur le site de Raspberry Pi[[à la date de rédaction de cet article, la dernière image publiée sous ce format date de juin 2014 ; cela pose cependant peu de difficulté, puisque nous mettrons le système à jour dès qu'il sera installé]]. Téléchargez-là, puis extrayez là :
+Commençons par récupérer la dernière version d'*Archlinux*, dont une [image](https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip) est proposée sur le site de Raspberry Pi[[à la date de rédaction de cet article, la dernière image publiée sous ce format date de juin 2014 ; cela pose cependant peu de difficulté, puisque nous mettrons le système à jour dès qu'il sera installé]]. Téléchargez-là, puis extrayez là :
 
 ```none
-curl -OL http://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip
+curl -OL https://downloads.raspberrypi.org/arch/images/arch-2014-06-22/ArchLinuxARM-2014.06-rpi.img.zip
 unzip ArchLinuxARM-2014.06-rpi.img.zip
 ```
 
@@ -51,7 +51,7 @@ sudo diskutil eject /dev/disk2
 Nous pouvons alors éjecter la carte SD et l'insérer dans votre Raspberry Pi. Connectons celui-ci à notre réseau, et mettons-le sous tension.
 
 ## Connexion au Raspberry Pi
-Nous allons accéder à notre Raspberry Pi depuis notre ordinateur, en ligne de commande à l'aide de SSH. Les utilisateurs d'macOS ou de Linux pourront directement lancer la commande `ssh` présentée ci-dessous, tandis que ceux de Windows préfèreront utiliser un logiciel comme [*PuTTY*](http://www.putty.org/). Dans le cas contraire, il est possible de connecter un clavier en USB et de connecter le Raspberry Pi à un écran à l'aide de son port HDMI.
+Nous allons accéder à notre Raspberry Pi depuis notre ordinateur, en ligne de commande à l'aide de SSH. Les utilisateurs d'macOS ou de Linux pourront directement lancer la commande `ssh` présentée ci-dessous, tandis que ceux de Windows préfèreront utiliser un logiciel comme [*PuTTY*](https://putty.org/). Dans le cas contraire, il est possible de connecter un clavier en USB et de connecter le Raspberry Pi à un écran à l'aide de son port HDMI.
 
 Comme toute autre ordinateur, le Raspberry Pi est identifié sur le réseau grâce à son adresse IP. Pour nous y connecter, il est nécessaire de connaître cette dernière.
 

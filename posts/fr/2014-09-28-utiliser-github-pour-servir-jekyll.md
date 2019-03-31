@@ -9,7 +9,7 @@ Nous avons vu dans des articles précédents comment [créer un site statique av
 
 * synchroniser votre site avec `git` sur [*GitHub*](https://github.com/) ;
 * générer le site à la volée et le servir avec [*GitHub Pages*](https://pages.github.com/) ;
-* rédiger directement ses articles en ligne grâce à [*Prose*](http://prose.io/) ;
+* rédiger directement ses articles en ligne grâce à [*Prose*](https://prose.io/) ;
 * tester la compilation, le HTML et les liens avec [*Travis*](https://travis-ci.org/).
 
 ## Stocker son site sur *GitHub*
@@ -66,7 +66,7 @@ git commit -m "Première version du site"
 git push
 ```
 
-Notre site n'étant composé que de simples fichiers texte, vous pouvez utiliser *git* comme avec n'importe quels projets. De nombreuses références existent si `git` ne vous est pas familier[[vous pouvez par exemple consulter [Git, le petit guide](http://rogerdudler.github.io/git-guide/index.fr.html) pour une introduction rapide, ou le livre [Pro Git](http://git-scm.com/book/fr) pour une introduction plus complète]].
+Notre site n'étant composé que de simples fichiers texte, vous pouvez utiliser *git* comme avec n'importe quels projets. De nombreuses références existent si `git` ne vous est pas familier[[vous pouvez par exemple consulter [Git, le petit guide](https://rogerdudler.github.io/git-guide/index.fr.html) pour une introduction rapide, ou le livre [Pro Git](https://git-scm.com/book/fr/v2) pour une introduction plus complète]].
 
 ## Servir son site sur *GitHub Pages*
 
@@ -117,9 +117,9 @@ La page recherchée a probablement été supprimée ou déplacée.
 ### Rédiger et modifier ses articles en ligne avec *Prose*
 L'un des principaux désavantages des sites statiques vis-à-vis des CMS est de ne pas pouvoir être facilement modifiables en ligne.
 
-Notre site étant hébergé sur *GitHub*, il est possible d'y modifier directement les fichiers, *Pages* se chargeant de regénérer le site à chaque modification. Il est également possible d'utiliser le site *[Prose.io](http://prose.io/)*, qui offre une belle interface avec coloration syntaxique et prévisualisation pour rédiger ses articles.
+Notre site étant hébergé sur *GitHub*, il est possible d'y modifier directement les fichiers, *Pages* se chargeant de regénérer le site à chaque modification. Il est également possible d'utiliser le site *[Prose.io](https://prose.io/)*, qui offre une belle interface avec coloration syntaxique et prévisualisation pour rédiger ses articles.
 
-Directement depuis le site *[Prose.io](http://prose.io/)*, connectez-vous avec vos identifiants *GitHub* et autorisez *Prose* à accéder à vos répertoires. Il vous est alors possible de créer et de modifier directement des articles, ou tous les autres fichiers du site.
+Directement depuis le site *[Prose.io](https://prose.io/)*, connectez-vous avec vos identifiants *GitHub* et autorisez *Prose* à accéder à vos répertoires. Il vous est alors possible de créer et de modifier directement des articles, ou tous les autres fichiers du site.
 
 Une fois les modifications acceptées, il vous est possible d'effectuer un `commit`, suite à quoi *GitHub* va générer le site.
 

@@ -177,7 +177,7 @@ Et pour l'article suivant :
 ### Traduction des éléments du site
 En dehors du contenu des articles, il est également nécessaire de traduire les différents éléments qui composent le site : textes des menus, du haut et de bas de page, certains titres...
 
-Pour cela, on peut indiquer des traductions dans `_config.yml`[[depuis la deuxième version de *Jekyll*, il est également possible de placer ces informations dans le dossier [_data](http://jekyllrb.com/docs/datafiles/)]]. Ainsi, dans l'exemple suivant, {% raw %}`{{ site.t[page.lang].home }}`{% endraw %} génèrera `Home`, `Accueil` ou `首页` selon la langue de la page :
+Pour cela, on peut indiquer des traductions dans `_config.yml`[[depuis la deuxième version de *Jekyll*, il est également possible de placer ces informations dans le dossier [_data](https://jekyllrb.com/docs/datafiles/)]]. Ainsi, dans l'exemple suivant, {% raw %}`{{ site.t[page.lang].home }}`{% endraw %} génèrera `Home`, `Accueil` ou `首页` selon la langue de la page :
 
 ```yml
 t:
