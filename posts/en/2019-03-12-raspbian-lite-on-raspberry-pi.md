@@ -34,7 +34,7 @@ sudo dd bs=1m if=image.img of=/dev/rdisk<number> conv=sync
 To be able to connect with SSH, we must create a file named `ssh` at the root of our SD card:
 
 ```
-touch Volumes/boot/ssh
+touch /Volumes/boot/ssh
 ````
 
 Finally, we eject the card:
