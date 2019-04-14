@@ -34,7 +34,24 @@ Pour pouvoir nous connecter avec SSH, on doit créer un fichier nommé `ssh` à 
 
 ```
 touch /Volumes/boot/ssh
-````
+```
+
+S'il y a besoin de se connecter à un réseau wifi au démarrage :
+
+```
+nano /Volumes/boot/wpa_supplicant.conf
+```
+
+On met :
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="<your-network-ssid>"
+    psk="<your-network-password>"
+    key_mgmt=WPA-PSK
+}
+```
 
 Enfin, on éjecte la carte :
 
@@ -61,9 +78,10 @@ passwd
 Après avoir mis en place un nouveau serveur, on commence par mettre à jour l'ensemble des paquets :
 
 ```
-apt-get update && apt-get upgrade
-apt-get dist-upgrade
-apt autoremove
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo rpi-update
+sudo apt autoremove
 ```
 
 
