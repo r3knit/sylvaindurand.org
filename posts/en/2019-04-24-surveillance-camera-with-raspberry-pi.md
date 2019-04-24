@@ -7,7 +7,7 @@ While connected surveillance cameras can be useful, they are also likely to have
 
 However, it is very simple – and very economical – to be able to make a simple monitoring system yourself using a Raspberry Pi. The Raspberry Pi Foundation offers a small [camera module]((https://www.raspberrypi.org/products/camera-module-v2/)). Many other brands exist, and the following article will also work with a simple USB webcam.
 
-![Raspberry Pi camera](/assets/raspberry/raspberrycamera.jpg)
+![Raspberry Pi camera]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrycamera.jpg)
 
 
 ## Camera activation

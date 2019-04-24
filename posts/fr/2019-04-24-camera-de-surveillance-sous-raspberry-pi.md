@@ -7,7 +7,7 @@ Si les caméras de surveillance connectées peuvent être bien utiles, elles son
 
 Pourtant, il est très simple – et très économique – de parvenir à réaliser soi-même un simple système de surveillance à l'aide d'un Raspberry Pi. La fondation Raspberry Pi propose une petite [caméra](https://www.raspberrypi.org/products/camera-module-v2/), de qualité très correcte. De nombreuses autres marques existent, et l'article suivant fonctionnera également avec une simple webcam USB.
 
-![Raspberry Pi camera](/assets/raspberry/raspberrycamera.jpg)
+![Raspberry Pi camera]({{ site.data.translations[page.lang].base }}/assets/raspberry/raspberrycamera.jpg)
 
 
 ## Activation de la caméra
