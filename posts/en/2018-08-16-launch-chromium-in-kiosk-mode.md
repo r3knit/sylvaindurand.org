@@ -20,7 +20,7 @@ Our goal will be to get:
 
 To display the browser, we will have to install an [X server](https://en.wikipedia.org/wiki/X_Window_System). There is no need to install a desktop environment or window manager, unnecessarily large, since the browser will be launched directly in full screen.
 
-```none
+```
 sudo apt-get install xserver-xorg-video-all xserver-xorg-input-all xserver-xorg-core xinit x11-xserver-utils
 ```
 
@@ -43,7 +43,7 @@ Your system must also be configured so that the user is automatically logged in 
 
 We will install, of course, Chromium, but also `unclutter`, which will allow us to hide the pointer of the mouse:
 
-```none
+```
 sudo apt-get install chromium-browser
 sudo apt-get install unclutter
 ```

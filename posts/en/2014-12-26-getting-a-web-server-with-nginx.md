@@ -14,13 +14,13 @@ In recent years, *Nginx* has established itself as a high quality alternative: a
 
 Installing *Nginx* is easily obtained with:
 
-```none
+```
 pacman -S nginx
 ```
 
 It is then possible to start *Nginx* with:
 
-```none
+```
 systemctl start nginx
 ```
 
@@ -32,7 +32,7 @@ We will start by creating a first site entirely static. The files will be locate
 
 For this, we edit the *Nginx* configuration file:
 
-```none
+```
 nano /etc/nginx/nginx.conf
 ```
 
@@ -51,14 +51,14 @@ The `listen` parameter specifies the listening port[[we generally chose port 80 
 
 We created this folder, and an `index.html` file with the right attributes:
 
-```none
+```
 mkdir -p /srv/http/mysite
 nano /srv/http/index.html
 ```
 
 Its configuration has been modified, we restart *Nginx* to take into account the changes:
 
-```none
+```
 systemctl restart nginx
 ```
 
@@ -70,13 +70,13 @@ Static websites, [that's goof]({{ site.data.translations[page.lang].base }}/stat
 
 To install PHP, we use the package `php-fpm` :
 
-```none
+```
 pacman -S php-fpm
 ```
 
 The we activate it:
 
-```none
+```
 systemctl start php-fpm
 ```
 
@@ -84,7 +84,7 @@ systemctl start php-fpm
 
 As before, we edit the *Nginx* configuration file:
 
-```none
+```
 nano /etc/nginx/nginx.conf
 ```
 
@@ -108,7 +108,7 @@ server {
 
 Again, we restart *Nginx*:
 
-```none
+```
 systemctl restart nginx
 ```
 
@@ -116,7 +116,7 @@ systemctl restart nginx
 
 A growing number of web applications use `sqlite` as a database. If you need it, install the package `php-sqlite` :
 
-```none
+```
 pacman -S php-sqlite
 ```
 
@@ -128,7 +128,7 @@ extension=pdo_sqlite.so
 
 Then we restart PHP:
 
-```none
+```
 systemctl restart php-fpm
 ```
 
@@ -136,7 +136,7 @@ systemctl restart php-fpm
 
 If you want to use *MySQL*, install the `mariadb` package, start `mysqld` then use the installation script:
 
-```none
+```
 pacman -S mariadb
 systemctl start mysqld
 mysql_secure_installation
@@ -158,7 +158,7 @@ As previously stated, creating a dynamic site for the folder `/srv/http/miniflux
 
 Installation is simple: download *Miniflux*, extract it, and give write access to the folder `data/`.
 
-```none
+```
 cd /srv/http/
 wget http://miniflux.net/miniflux-latest.zip
 unzip miniflux-latest.zip
@@ -169,7 +169,7 @@ chmod 777 data/
 
 Then, to enable monitoring RSS feeds every hour, create a `cron` task with:
 
-```none
+```
 crontab -e
 ```
 
@@ -185,7 +185,7 @@ Synchronize calendars, contacts and files between different devices - computers,
 
 Again, create a dynamic site for `/srv/http/owncloud/`. Then, we download *OwnCloud*:
 
-```none
+```
 mkdir -p /srv/http/owncloud
 wget http://download.owncloud.org/community/owncloud-7.0.4.tar.bz2
 tar xvf owncloud-7.0.4.tar.bz2
@@ -196,7 +196,7 @@ rm -rf owncloud owncloud-7.0.4.tar.bz2
 
 We then add a `cron` task that will automate the update by running:
 
-```none
+```
 crontab -e
 ```
 

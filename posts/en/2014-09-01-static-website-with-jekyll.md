@@ -24,7 +24,7 @@ This article will show how to install (I) and use (II) the [*Jekyll*](https://je
 
 Directly install the last stable version of *Ruby*, or [RVM](https://rvm.io/), then simply launch:
 
-```none
+```
 gem install jekyll
 ```
 
@@ -46,7 +46,7 @@ With a single command, it is possible to generate the website and create a local
 
 The tree structure may then looks like:
 
-```none
+```
 mysite/
     _includes/
     _layouts/

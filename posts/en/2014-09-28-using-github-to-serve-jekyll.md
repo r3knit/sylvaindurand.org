@@ -27,7 +27,7 @@ If you have got a *GitHub* paid plans, you can create a private repository in or
 ### Synchronizing our local folder
 On your computer, create the folder where the website will be stored, then open a terminal and clone the newly created repository:
 
-```none
+```
 git clone https://github.com/username/username.github.io.git
 cd username.github.io
 ```
@@ -43,7 +43,7 @@ Gemfile.lock
 
 We can now push this file on *GitHub*[[when you `push` for the first time, you have to provide your username and your password, but they won't be asked again]] :
 
-```none
+```
 git add .gitignore
 git commit -m "First commit"
 git push
@@ -60,7 +60,7 @@ It is then easy to maintain and edit the website with `git` :
 
 For instance, in order to send our new website, we add every file, then we use  `git commit` then `git push` :
 
-```none
+```
 git add --all
 git commit -m "First version"
 git push
@@ -77,7 +77,7 @@ Each time you will use `git push`, your website will be automatically generated 
 
 This is why it is highly important to make sure everything is going to work perfectly, if we don't want to break our website online. In order to ensure your computer most closely matches the GitHub Pages settings, the best way to do is to use `bundler`:
 
-```none
+```
 gem install bundler
 ```
 

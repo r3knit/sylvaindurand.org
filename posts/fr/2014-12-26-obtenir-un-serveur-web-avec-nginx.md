@@ -14,13 +14,13 @@ Dans la ligne de [l'article précédent]({{ site.data.translations[page.lang].ba
 
 L'installation de *Nginx* s'obtient aisément avec :
 
-```none
+```
 pacman -S nginx
 ```
 
 Il est alors possible de démarrer manuellement *Nginx* avec :
 
-```none
+```
 systemctl start nginx
 ```
 
@@ -32,7 +32,7 @@ Nous allons commencer par créer un premier site, entièrement statique. Les fic
 
 Pour cela, nous éditons le fichier de configuration de *Nginx* :
 
-```none
+```
 nano /etc/nginx/nginx.conf
 ```
 
@@ -51,14 +51,14 @@ Le paramètre `listen` indique le port d'écoute[[on choisit généralement le p
 
 On créé le dossier en question, ainsi qu'un fichier index.html, et on lui donne les bons attributs :
 
-```none
+```
 mkdir -p /srv/http/monsite
 nano /srv/http/index.html
 ```
 
 Sa configuration ayant été modifiée, on relance *Nginx* pour prendre en compte les changements :
 
-```none
+```
 systemctl restart nginx
 ```
 
@@ -70,13 +70,13 @@ Les sites statiques, [c'est bien]({{ site.data.translations[page.lang].base }}/s
 
 Pour installer PHP, nous utilisons le paquet `php-fpm` :
 
-```none
+```
 pacman -S php-fpm
 ```
 
 On active alors celui-ci :
 
-```none
+```
 systemctl start php-fpm
 ```
 
@@ -84,7 +84,7 @@ systemctl start php-fpm
 
 Comme précedemment, nous éditons le fichier de configuration de *Nginx* :
 
-```none
+```
 nano /etc/nginx/nginx.conf
 ```
 
@@ -108,7 +108,7 @@ server {
 
 On relance à nouveau *Nginx* :
 
-```none
+```
 systemctl restart nginx
 ```
 
@@ -116,7 +116,7 @@ systemctl restart nginx
 
 Un nombre croissant d'applications web utilisent `sqlite` en guise de base de données. S'il vous est nécessaire, commencez par installer le paquet `php-sqlite` :
 
-```none
+```
 pacman -S php-sqlite
 ```
 
@@ -128,7 +128,7 @@ extension=pdo_sqlite.so
 
 On redémarre alors PHP :
 
-```none
+```
 systemctl restart php-fpm
 ```
 
@@ -136,7 +136,7 @@ systemctl restart php-fpm
 
 Pour utiliser *MySQL*, on installe le paquet `mariadb`, qu'on active, puis on lance le script d'installation :
 
-```none
+```
 pacman -S mariadb
 systemctl start mysqld
 mysql_secure_installation
@@ -158,7 +158,7 @@ Comme indiqué précédemment, créons un site dynamique pour le dossier `/srv/h
 
 L'installation se fait alors simplement : on télécharge *Miniflux*, qu'on décompresse, et on donne les droits de lecture au dossier `data/`.
 
-```none
+```
 cd /srv/http/
 wget http://miniflux.net/miniflux-latest.zip
 unzip miniflux-latest.zip
@@ -169,7 +169,7 @@ chmod 777 data/
 
 Puis, pour activer la surveillance des flux RSS toutes les heures, on créée une tâche `cron` avec la commande :
 
-```none
+```
 crontab -e
 ```
 
@@ -185,7 +185,7 @@ Synchroniser ses calendriers, contacts et différents fichiers entre différents
 
 À nouveau, créons un site dynamique pour le dossier `/srv/http/owncloud/`. Nous y téléchargeons alors *OwnCloud* :
 
-```none
+```
 mkdir -p /srv/http/owncloud
 wget http://download.owncloud.org/community/owncloud-7.0.4.tar.bz2
 tar xvf owncloud-7.0.4.tar.bz2
@@ -196,7 +196,7 @@ rm -rf owncloud owncloud-7.0.4.tar.bz2
 
 Nous ajoutons ensuite une tâche `cron` qui va automatiser la mise à jour en exécutant :
 
-```none
+```
 crontab -e
 ```
 

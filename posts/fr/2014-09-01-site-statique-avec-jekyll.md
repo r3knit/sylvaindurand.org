@@ -24,7 +24,7 @@ Dans cet article, nous allons voir comment installer (I) et utiliser (II) le gé
 
 Pour installer Jekyll, après avoir installé *Ruby*, par exemple avec [RVM](https://rvm.io/), lancez simplement la commande suivante :
 
-```none
+```
 gem install jekyll
 ```
 
@@ -46,7 +46,7 @@ Le code source d'un site *Jekyll* s'organise selon plusieurs dossiers :
 
 Le répertoire de votre site pourra alors ressembler à :
 
-```none
+```
 monsite/
     _includes/
     _layouts/

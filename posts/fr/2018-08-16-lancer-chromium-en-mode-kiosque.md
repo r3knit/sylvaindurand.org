@@ -23,7 +23,7 @@ Notre objectif sera d'obtenir :
 Pour afficher le navigateur, nous allons devoir installer un [serveur X](https://fr.wikipedia.org/wiki/X_Window_System). Il n'y a pas besoin d'installer d'environnement de bureau ni gestionnaire de fenêtre, inutilement volumineux, puisque le navigateur sera directement lancé en plein écran.
 
 
-```none
+```
 sudo apt-get install xserver-xorg-video-all xserver-xorg-input-all xserver-xorg-core xinit x11-xserver-utils
 ```
 
@@ -46,7 +46,7 @@ Votre système devra également être configuré pour que l'utilisateur soit aut
 
 Nous allons installer, bien sûr, Chromium, mais aussi `unclutter`, qui nous permettra de masquer le pointeur de la souris :
 
-```none
+```
 sudo apt-get install chromium-browser
 sudo apt-get install unclutter
 ```

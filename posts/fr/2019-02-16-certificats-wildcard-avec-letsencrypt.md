@@ -15,7 +15,7 @@ Cette possibilité est particulièrement intéressante lorsque l'on utilise de n
 Pour obtenir nos certificats, nous allons utiliser le client `certbot`. Le site propose plusieurs [méthodes d'installation](https://certbot.eff.org) selon votre plateforme. Depuis Debian, on utilise simplement :
 
 
-```none
+```
 sudo apt-get install letsencrypt
 
 ```
@@ -24,7 +24,7 @@ sudo apt-get install letsencrypt
 
 Attention, si vous souhaitez un certificat à la fois pour la racine du domaine (`domain.tld`) et l'ensemble de ses sous-domaines (`*.domain.tld`), les deux doivent être spécifiés. Avec l'option `-d`, il est possible de lister les domaines et sous-domaines souhaités :
 
-```none
+```
 sudo letsencrypt certonly --manual --preferred-challenges dns --register -d domain.tld -d *.domain.tld
 ```
 

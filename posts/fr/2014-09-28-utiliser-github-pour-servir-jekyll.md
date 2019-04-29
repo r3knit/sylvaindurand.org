@@ -27,7 +27,7 @@ Si vous possédez un compte *GitHub* payant, il vous est par ailleurs possible d
 ### Synchronisation du répertoire en local
 Sur votre ordinateur local, créez le dossier qui accueillera votre site, ouvrez un terminal dans ce dossier, et clonez le répertoire fraîchement créé :
 
-```none
+```
 git clone https://github.com/username/username.github.io.git
 cd username.github.io
 ```
@@ -43,7 +43,7 @@ Gemfile.lock
 
 Nous pouvons alors envoyer ce fichier sur *GitHub*[[lors du premier `push`, vous devrez indiquer votre nom d'utilisateur et votre mot de passe, mais ceux-ci ne seront plus demandés ensuite]] :
 
-```none
+```
 git add .gitignore
 git commit -m "First commit"
 git push

@@ -16,7 +16,7 @@ This possibility is particularly interesting when using many subdomains: so far,
 To get our certificates, we will use the `certbot` client. The site offers several [installation methods](https://certbot.eff.org) depending on your platform. On Debian, you can simply use:
 
 
-```none
+```
 sudo apt-get install letsencrypt
 ```
 
@@ -24,7 +24,7 @@ sudo apt-get install letsencrypt
 
 Be careful, if you want a certificate for both the domain root (`domain.tld`) and its subdomains (`*.domain.tld`), both must be specified. With the `-d` parameter, it is possible to list the desired domains and subdomains:
 
-```none
+```
 sudo letsencrypt certonly --manual --preferred-challenges dns --register -d domain.tld -d *.domain.tld
 ```
 

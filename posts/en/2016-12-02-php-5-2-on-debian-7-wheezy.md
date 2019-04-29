@@ -11,7 +11,7 @@ PHP 5.2 end of life occured in [January 2011](https://www.php.net/eol.php); thus
 
 We will use the Debian 6 *Lenny* sources. To do so, let's edit `/etc/apt/sources.list` in order to add the repo:
 
-```none
+```
 deb http://archive.debian.org/debian lenny main contrib non-free
 ```
 
@@ -31,7 +31,7 @@ Pin-Priority: 999
 
 The installation isn't straightforward due to a conflict with the dependency `libkrb53`. We will first download the packages: 
 
-```none
+```
 cd ~
 apt-get update
 apt-get download php5-common php5-cli php5-curl php5-gd \
@@ -41,7 +41,7 @@ apt-get download php5-common php5-cli php5-curl php5-gd \
 
 Then, we install them, while specifying we want to ignore the missing `libkrb53`:
 
-```none
+```
 dpkg --ignore-depends=libkrb53 -i *.deb
 ```
 
@@ -49,7 +49,7 @@ dpkg --ignore-depends=libkrb53 -i *.deb
 
 Now, PHP 5.2 should work, but now `apt` doesn't accept to install new packages anymore. It will ask to run `apt-get -f install`, wich will delete PHP:
 
-```none
+```
 You might want to run 'apt-get -f install' to correct these.
 The following packages have unmet dependencies:
     libapache2-mod-php5 : Depends: libkrb53 (>= 1.6.dfsg.2) but it is not installed
