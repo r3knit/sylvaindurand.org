@@ -145,7 +145,7 @@ Finally, to lighten the code, it is possible to include these codes in a specifi
 
 {% raw %}
 ```liquid
- {% if page.lang != 'en' %}
+{% if page.lang != 'en' %}
     {% include typography.html %}
 {% else %}
     {{ content }}

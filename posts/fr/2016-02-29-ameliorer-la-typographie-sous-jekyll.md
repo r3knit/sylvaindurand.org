@@ -145,7 +145,7 @@ Enfin, pour alléger le code, il est possible d'inclure ces codes dans une page 
 
 {% raw %}
 ```liquid
- {% if page.lang != 'en' %}
+{% if page.lang != 'en' %}
     {% include typography.html %}
 {% else %}
     {{ content }}
