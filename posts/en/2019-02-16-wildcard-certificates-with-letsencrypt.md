@@ -35,14 +35,14 @@ sudo letsencrypt certonly --manual --preferred-challenges dns --register -d doma
 *Let's encrypt* will now have to ask us to prove that we have control over the domain names requested. It will request the creation of a specific TXT record in the DNS zone of the domain name, which can be done from your registar:
 
 ```
--------------------------------------------------------------------------------
+----------------------------------------------------------------
 Please deploy a DNS TXT record under the name
 _acme-challenge.domain.tld with the following value:
 
 c81US66r6JVk1LwyFHbzINQvIU_m5gJWXgcUm8Qj2
 
 Before continuing, verify the record is deployed.
--------------------------------------------------------------------------------
+----------------------------------------------------------------
 Press Enter to Continue
 ```
 
@@ -57,7 +57,9 @@ Once created, the certificate is located in `/etc/letsencrypt/live/domain.tld`.
 
 In order to renew certificates periodicaly, we create a cron task:
 
-```sudo crontab -e```
+```
+sudo crontab -e
+```
 
 For instance, if you want to renew the certificates every Monday night, then restart nginx, we put:
 

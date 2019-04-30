@@ -17,7 +17,7 @@ First connect the camera to the Raspberry Pi using the [correct interface](https
 It is then necessary to activate the camera with:
 
 ```
-sudo raspi-confi
+sudo raspi-config
 ```
 
 Select `Interfacing Options` » `P1 Camera` » `Enable`, before restarting the Raspberry Pi.

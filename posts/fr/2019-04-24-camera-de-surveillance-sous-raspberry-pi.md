@@ -17,7 +17,7 @@ Commencez par raccorder la caméra au Raspberry Pi en utilisant la [bonne interf
 Il est ensuite nécessaire d'activer la caméra avec :
 
 ```
-sudo raspi-confi
+sudo raspi-config
 ```
 
 Sélectionnez `Interfacing Options` » `P1 Camera` » `Enable`, avant de redémarrer le Raspberry Pi.
