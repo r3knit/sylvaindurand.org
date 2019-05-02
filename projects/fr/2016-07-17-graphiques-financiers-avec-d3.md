@@ -1,7 +1,5 @@
 ---
 title: Graphiques financiers
-type: projects
-lang: fr
 language: Javascript
 desc: Outils de visualisation de données financières.
 ---
