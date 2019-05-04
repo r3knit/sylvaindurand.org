@@ -171,4 +171,4 @@ for r, d, f in os.walk(path):
                     points.append(latlong)
 ```
 
-You can then export `points` to display it on a map, for example with[Leaflet](https://leafletjs.com).
+You can then export `points` to display it on a map, for example with [Leaflet](https://leafletjs.com).
