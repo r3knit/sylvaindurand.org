@@ -9,7 +9,7 @@ La plupart des appareils photos récents et téléphones portables enregistrent 
 Nous allons ici voir comment accéder à l'ensemble des métadonnées [EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format) d'une image, puis y décoder les données GPS. Pour l'exemple, nous allons utiliser la photographie suivante, prise à [Þórsmörk](https://fr.wikipedia.org/wiki/Þórsmörk) en Islande :
 
 {:.large}
-[![Þórsmörk](/assets/gps/Þórsmörk_small.jpg)](/assets/gps/Þórsmörk.jpg)
+[![Þórsmörk]({{ site.data.translations[page.lang].base }}/assets/gps/thorsmork_small.jpg)]({{ site.data.translations[page.lang].base }}/assets/gps/thorsmork.jpg)
 
 
 ## Lecture des métadonnées
