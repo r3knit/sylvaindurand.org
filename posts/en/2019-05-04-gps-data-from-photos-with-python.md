@@ -76,9 +76,9 @@ def get_coordinates(info):
             e = info['GPS'+key]
             ref = info['GPS'+key+'Ref']
             info[key] = ( str(e[0][0]/e[0][1]) + '°' +
-                                 str(e[1][0]/e[1][1]) + '′' +
-                                 str(e[2][0]/e[2][1]) + '″ ' +
-                                 ref)
+                          str(e[1][0]/e[1][1]) + '′' +
+                          str(e[2][0]/e[2][1]) + '″ ' +
+                          ref )
 
     if 'Latitude' in info and 'Longitude' in info:
         return [info['Latitude'], info['Longitude']]
