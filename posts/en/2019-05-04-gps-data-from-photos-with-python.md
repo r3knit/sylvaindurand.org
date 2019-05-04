@@ -1,5 +1,5 @@
 ---
-title: EXIF and GPS data from <br/> photos with <em>Python</em>
+title: GPS data from <br/> photos with <em>Python</em>
 categories: Python
 ---
 

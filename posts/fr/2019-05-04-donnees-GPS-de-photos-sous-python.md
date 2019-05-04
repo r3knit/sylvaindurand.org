@@ -1,5 +1,5 @@
 ---
-title: Données EXIF et GPS de <br/> photos avec <em>Python</em>
+title: Données GPS de <br/> photos avec <em>Python</em>
 categories: Python
 ---
 
