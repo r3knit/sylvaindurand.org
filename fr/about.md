@@ -2,7 +2,8 @@
 title: À propos
 slug: a-propos
 menu: nav
-weight: 3
+date: 2014-01-01
+weight: 4
 ---
 
 ## Colophon

@@ -1,7 +1,8 @@
 ---
 title: About
 menu: nav
-weight: 3
+weight: 4
+date: 2014-01-01
 ---
 
 ## Colophon
