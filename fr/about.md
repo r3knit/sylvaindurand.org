@@ -1,0 +1,16 @@
+---
+title: À propos
+slug: a-propos
+menu: nav
+weight: 3
+---
+
+## Colophon
+Ce site est entièrement [statique](https://fr.wikipedia.org/wiki/Page_web_statique) : constitué uniquement de HTML et de CSS, il ne nécessite aucun code dynamique. Une attention particulière est portée à la [typographie](http://webtypography.net/) et au [rythme vertical](http://webtypography.net/2.2.2).
+
+Les pages sont produites à l'aide du générateur de sites statiques [Hugo](https://gohugo.io).
+
+L'en-tête de chaque page est illustrée par une partie du [plan de Paris dit "de Turgot"](https://fr.wikipedia.org/wiki/Plan_de_Turgot), réalisé au XVIII<sup>e</sup> siècle par [Louis Bretez](https://fr.wikipedia.org/wiki/Louis_Bretez).
+
+## Licence
+Le thème graphique n'est pas réutilisable ; en revanche, le contenu et les codes présentés sur ce site sont publiés sous [licence MIT](http://opensource.org/licenses/MIT) et sont disponibles sur [GitHub](https://github.com/sylvaindurand/sylvaindurand.org).

@@ -1,0 +1,15 @@
+---
+title: About
+menu: nav
+weight: 3
+---
+
+## Colophon
+This website is entirely [static](https://en.wikipedia.org/wiki/Static_web_page): it works only with HTML and CSS, and does not use any dynamic language. Particular attention is paid to [typography](http://webtypography.net/) and to [vertical rhythm](http://webtypography.net/2.2.2).
+
+The pages are produced with the static site generator [Hugo](https://gohugo.io).
+
+Each page header is illustrated with a part from the ["Turgot" map of Paris](https://en.wikipedia.org/wiki/Turgot_map_of_Paris), created in the 18<sup>th</sup> century by Louis Bretez.
+
+## License
+The design isn't reusable; however, other content and codes presented on this website published under the [MIT license](http://opensource.org/licenses/MIT) and freely available on [GitHub](https://github.com/sylvaindurand/sylvaindurand.org).
