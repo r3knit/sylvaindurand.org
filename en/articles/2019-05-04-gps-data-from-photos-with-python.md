@@ -15,9 +15,9 @@ Here we will see how to access all the [EXIF](https://en.wikipedia.org/wiki/Exif
 
 ## Reading metadata
 
-The *Python Imaging Library* (PIL) provides easy access to data[EXIF](https://en.wikipedia.org/wiki/Exif) with the function `_getexif()`.
+The *Python Imaging Library* (PIL) provides easy access to [EXIF](https://en.wikipedia.org/wiki/Exif) data with the function `_getexif()`.
 
-It is easily installed, under Python3, with the *fork*[Pillow](https://pillow.readthedocs.io). We use the following command{{% marginalia %}}depending on your configuration, `pip3` can be directly accessible with `pip`{{% /marginalia %}}:
+It is easily installed, under Python3, with the *fork* [Pillow](https://pillow.readthedocs.io). We use the following command{{% marginalia %}}depending on your configuration, `pip3` can be directly accessible with `pip`{{% /marginalia %}}:
 
 ```
 pip3 install pillow
