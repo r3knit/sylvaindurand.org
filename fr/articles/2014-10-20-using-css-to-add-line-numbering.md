@@ -1,7 +1,7 @@
 ---
 title: Numéroter les lignes de code avec CSS
 alt: Numéroter les lignes <br> de code avec *CSS*
-categories: Divers
+categories: CSS
 ---
 
 Lorsque l'on souhaite afficher des lignes de code en *HTML*, on utilise `<pre>` pour indiquer que le texte est préformaté dans laquelle on place une ou plusieurs balises `<code>` pour indiquer qu'il s'agit de code.

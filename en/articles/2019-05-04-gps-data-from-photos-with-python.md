@@ -10,7 +10,7 @@ Most recent cameras and mobile phones record photographs with geographical data 
 Here we will see how to access all the [EXIF](https://en.wikipedia.org/wiki/Exif) metadata of an image, then decode the GPS data. For the example, we will use the following photograph, taken in [Þórsmörk](https://en.wikipedia.org/wiki/Thórsmörk) in Iceland:
 
 {{% large %}}
-[![Þórsmörk](/img/gps/thorsmork_small.jpg)](/img/gps/thorsmork.jpg)
+{{< img src="/img/samples/thorsmork.jpg" alt="Þórsmörk" />}}
 {{% /large %}}
 
 ## Reading metadata

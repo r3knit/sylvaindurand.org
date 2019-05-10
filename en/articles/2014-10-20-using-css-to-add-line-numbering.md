@@ -1,7 +1,7 @@
 ---
 title: Using CSS to add line numbering
 alt: Using *CSS* to add <br> line numbering
-categories: Miscellaneous
+categories: CSS
 ---
 
 When you want to display a code listing with *HTML*, you use a `<pre>` tag in order to indicate that the text is preformatted, then inside one or multiple `<code>` tags to specify it is a code.
