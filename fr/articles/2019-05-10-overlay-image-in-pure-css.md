@@ -93,6 +93,7 @@ L'overlay n'est rien d'autre qu'une `div` au positionnement fixé, située en ha
 
   /* On conserve le ratio de l'image */
   width: auto;
+  height: auto;
 }
 ```
 
@@ -164,6 +165,7 @@ Finally, our CSS code became:
   max-width: 90%;
   max-height: 90%;
   width: auto;
+  height: auto;
   transform: scale(0.95);
   transition: transform .3s;
 }

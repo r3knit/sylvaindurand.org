@@ -96,6 +96,7 @@ The overlay is nothing more than a `div` with a fixed position, located at the t
 
   /* We keep the ratio of the image */
   width: auto;
+  height: auto;
 }
 ```
 
@@ -163,6 +164,7 @@ Finally, our CSS code became:
   max-width: 90%;
   max-height: 90%;
   width: auto;
+  height: auto;
   transform: scale(0.95);
   transition: transform .3s;
 }
