@@ -86,7 +86,6 @@ After setting up a new server, we start by updating all the packages:
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get dist-upgrade
-sudo rpi-update
 sudo apt autoremove
 ```
 

@@ -82,7 +82,6 @@ Après avoir mis en place un nouveau serveur, on commence par mettre à jour l'e
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get dist-upgrade
-sudo rpi-update
 sudo apt autoremove
 ```
 
