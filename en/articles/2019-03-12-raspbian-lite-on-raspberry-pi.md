@@ -129,17 +129,17 @@ sudo reboot
 Locally, we create a new private key:
 
 ```
-ssh-keygen -t ed25519
-````
+ssh-keygen -t ed25519 -a 100
+```
 
 Then we edit `.ssh/config` to connect easily:
 
 ```
 Host pi
-Hostname <raspberry-pi-ip>
-Port <your-custom-port>
-User pi
-IdentityFile ~/.ssh/<your-private-key>
+    Hostname <raspberry-pi-ip>
+    Port <your-custom-port>
+    User pi
+    IdentityFile ~/.ssh/<your-private-key>
 ```
 
 

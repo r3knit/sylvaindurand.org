@@ -35,7 +35,7 @@ In order to connect to *Gitolite*, we will used SSH key-based authentication, bo
 
 ```
 cd ~/.ssh
-ssh-keygen -t ed25519
+ssh-keygen -t ed25519 -a 100
 ```
 
 When the path is requested, enter your username `<user>`. The password is optional: if you choose one, it will be asked each time a *git* command is requesting the server.

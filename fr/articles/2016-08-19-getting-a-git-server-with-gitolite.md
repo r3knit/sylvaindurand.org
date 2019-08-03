@@ -36,7 +36,7 @@ Nous nous connecterons à *Gitolite* avec une [authentification par clefs SSH](/
 
 ```
 cd ~/.ssh
-ssh-keygen -t ed25519
+ssh-keygen -t ed25519 -a 100
 ```
 
 Lorsque le chemin de la clef est demandé, indiquez simplement votre nom d'utilisateur `<user>`. Le mot de passe est facultatif : si vous en choisissez un, il sera demandé à chaque commande *git* sollicitant le serveur.

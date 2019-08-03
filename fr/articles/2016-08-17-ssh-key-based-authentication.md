@@ -24,7 +24,7 @@ cd ~/.ssh
 L'algorithme `ed25519` apparaît à ce jour être l'un des plus sécurisés, tout en restant très rapide :
 
 ```
-ssh-keygen -t ed25519
+ssh-keygen -t ed25519 -a 100
 ```
 
 Néanmoins, ce dernier est encore récent et n'est pas supporté sur tous les systèmes. Dans ce cas, il est possible d'utiliser le RSA :
