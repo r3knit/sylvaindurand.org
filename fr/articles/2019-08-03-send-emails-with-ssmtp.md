@@ -1,6 +1,6 @@
 ---
 title: Envoyer des mails avec ssmtp
-alt: Envoyer des mails <br> avec <em>ssmtp</em>
+alt: Envoyer des mails <br> avec *ssmtp*
 categories: Linux
 ---
 

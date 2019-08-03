@@ -1,6 +1,6 @@
 ---
 title: Send emails with ssmtp
-alt: Send emails <br> with <em>ssmtp</em>
+alt: Send emails <br> with *ssmtp*
 categories: Linux
 ---
 
