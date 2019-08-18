@@ -121,7 +121,7 @@ We get:
 [63.683077777777775, -19.530941666666667]
 ```
 
-## Avec GPSPhoto
+## With GPSPhoto
 
 Since the end of 2018, the Python library `GPSPhoto` allows to obtain directly the geographical coordinates of a photo.
 
