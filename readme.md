@@ -1,6 +1,6 @@
 # sylvaindurand.org
 
-This directory displays the sources of all articles published on [sylvaindurand.org](www.sylvaindurand.org) (`/en/`) and [sylvaindurand.fr](sylvaindurand.fr) (`/fr/`).
+This directory displays the sources of all articles published on [sylvaindurand.org](https://www.sylvaindurand.org) (`/en/`) and [sylvaindurand.fr](https://www.sylvaindurand.fr) (`/fr/`).
 
 Feel free to comment (by opening an issue) or contribute (using a pull requests).
 
