@@ -180,9 +180,9 @@ Finally, our CSS code became:
 }
 ```
 
-## Bonus : shortcode pour *Hugo*
+## Bonus: shortcode for *Hugo*
 
-À l'aide du générateur de site statique *Hugo*, il est facile d'automatiser l'insertion à l'aide des [shortcodes](https://gohugo.io/content-management/shortcodes/). On créé pour cela un fichier `img.html` dans `layouts/shortcodes/` :
+With the static website generator *Hugo*, you can easily automate the process with a [shortcode](https://gohugo.io/content-management/shortcodes/). To do so, we create a `img.html` file in `layouts/shortcodes/` :
 
 ```html
 <a href="#{{ anchorize (.Get "src") }}">
@@ -194,7 +194,7 @@ Finally, our CSS code became:
 {{ .Inner }}
 ```
 
-Il suffit alors, dans vos articles, d'inclure le shortcode :
+Then, you just have to add, in your articles:
 
 ```go
 {{</* img src="image.jpg" alt="Description" /*/>}}
