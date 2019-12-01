@@ -1,6 +1,7 @@
 ---
 title: Utiliser Github pour servir Jekyll
 alt: Utiliser Github <br> pour servir *Jekyll*
+aliases: utiliser-github-pour-servir-jekyll
 categories: Jekyll
 ---
 

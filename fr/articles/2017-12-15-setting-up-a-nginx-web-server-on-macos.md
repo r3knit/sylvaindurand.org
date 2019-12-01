@@ -1,6 +1,7 @@
 ---
 title: Serveur web local Nginx pour macOS
 alt: Serveur web local <br> *Nginx* pour macOS
+aliases: serveur-web-local-nginx-pour-macos
 categories: Nginx
 ---
 

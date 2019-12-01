@@ -1,6 +1,7 @@
 ---
 title: Lancer Chromium en mode kiosque
 alt: Lancer *Chromium* <br> en mode kiosque
+aliases: lancer-chromium-en-mode-kiosque
 categories: Raspberry Pi
 ---
 

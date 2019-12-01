@@ -1,6 +1,7 @@
 ---
 title: Améliorer la typographie  sous Jekyll
 alt: Améliorer la typographie <br> sous *Jekyll*
+aliases: ameliorer-la-typographie-sous-jekyll
 categories: Jekyll
 ---
 

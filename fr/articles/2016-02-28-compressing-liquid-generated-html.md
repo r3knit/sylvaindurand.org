@@ -1,6 +1,7 @@
 ---
 title: Compresser le code généré par Liquid
 alt: Compresser le code <br> généré par *Liquid*
+aliases: compresser-le-code-genere-par-liquid
 categories: Jekyll
 ---
 

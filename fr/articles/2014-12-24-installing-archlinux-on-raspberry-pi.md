@@ -1,6 +1,7 @@
 ---
 title: Installer Archlinux sur Raspberry Pi
 alt: Installer *Archlinux* <br> sur Raspberry Pi
+aliases: installer-archlinux-sur-raspberry-pi
 categories: Raspberry Pi
 ---
 

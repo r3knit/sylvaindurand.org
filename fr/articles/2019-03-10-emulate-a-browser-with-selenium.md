@@ -1,6 +1,7 @@
 ---
 title: Émuler un navigateur avec Selenium
 alt: Émuler un navigateur <br> avec *Selenium*
+aliases: emuler-un-navigateur-avec-selenium
 categories: Python
 ---
 

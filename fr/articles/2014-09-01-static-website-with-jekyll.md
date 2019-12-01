@@ -1,6 +1,7 @@
 ---
 title: Site statique avec Jekyll
 alt: Site statique <br> avec *Jekyll*
+aliases: site-statique-avec-jekyll
 categories: Jekyll
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Authentification par clef avec SSH
 alt: Authentification <br> par clef avec SSH
+aliases: authentification-par-clef-avec-ssh
 categories: Linux
 ---
 

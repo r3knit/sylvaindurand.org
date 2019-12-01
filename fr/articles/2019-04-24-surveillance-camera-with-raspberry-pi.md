@@ -1,6 +1,7 @@
 ---
 title: Caméra de surveillance sous Raspberry Pi
 alt: Caméra de surveillance <br> sous Raspberry Pi
+aliases: camera-de-surveillance-sous-raspberry-pi
 categories: Raspberry Pi
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Utiliser Tor sous Python
 alt: Utiliser *Tor* <br> sous *Python*
+aliases: utiliser-tor-sous-python
 categories: Python
 ---
 
