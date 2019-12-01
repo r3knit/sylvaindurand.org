@@ -1,7 +1,7 @@
 ---
 title: Obtenir un serveur web avec Nginx
 alt: Obtenir un serveur <br> web avec *Nginx*
-aliases: /synchroniser-calendriers-et-contacts-avec-owncloud/
+aliases: [synchroniser-calendriers-et-contacts-avec-owncloud', obtenir-un-serveur-web-avec-nginx]
 categories: Nginx
 ---
 

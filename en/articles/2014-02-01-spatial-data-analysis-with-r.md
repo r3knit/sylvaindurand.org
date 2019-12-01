@@ -1,6 +1,7 @@
 ---
 title: Spatial Data Analysis with R
 alt: Spatial Data Analysis <br> with *R*
+aliases: spatial-data-analysis-with-R
 categories: Miscellaneous
 ---
 

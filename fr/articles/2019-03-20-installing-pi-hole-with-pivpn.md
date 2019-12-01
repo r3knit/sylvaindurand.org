@@ -1,6 +1,7 @@
 ---
 title: Installer Pi-hole avec PiVPN
 alt: Installer *Pi-hole* <br> avec *PiVPN*
+aliases: installer-pi-hole-avec-pivpn
 categories: Raspberry Pi
 ---
 

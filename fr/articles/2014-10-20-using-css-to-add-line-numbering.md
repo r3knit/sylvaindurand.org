@@ -1,6 +1,7 @@
 ---
 title: Numéroter les lignes de code avec CSS
 alt: Numéroter les lignes <br> de code avec *CSS*
+aliases: numeroter-les-lignes-de-code-avec-css
 categories: CSS
 ---
 

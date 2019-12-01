@@ -1,7 +1,7 @@
 ---
 title: Servir son site avec Cloudfront
 alt: Servir son site <br> avec *Cloudfront*
-aliases: /site-statique-avec-cloudfront/
+aliases: [site-statique-avec-cloudfront, servir-son-site-avec-cloudfront]
 categories: Jekyll
 ---
 

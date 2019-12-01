@@ -1,6 +1,7 @@
 ---
 title: Obtenir un serveur git avec Gitolite
 alt: Obtenir un serveur git <br> avec *Gitolite*
+aliases: obtenir-un-serveur-git-avec-gitolite
 categories: Linux
 ---
 

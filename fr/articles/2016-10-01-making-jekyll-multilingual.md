@@ -1,6 +1,7 @@
 ---
 title: Rendre Jekyll multilingue
 alt: Rendre *Jekyll* <br> multilingue
+aliases: rendre-jekyll-multilingue
 categories: Jekyll
 ---
 

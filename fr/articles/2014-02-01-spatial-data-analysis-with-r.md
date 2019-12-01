@@ -1,6 +1,7 @@
 ---
 title: Cartographie avec R
 alt: Cartographie <br> avec *R*
+aliases: cartographie-avec-R
 categories: Divers
 ---
 
