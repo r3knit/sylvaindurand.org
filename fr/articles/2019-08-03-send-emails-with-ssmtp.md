@@ -1,6 +1,7 @@
 ---
-title: Envoyer des mails avec ssmtp
-alt: Envoyer des mails <br> avec *ssmtp*
+title: Envoyer des mails avec msmtp
+alt: Envoyer des mails <br> avec *msmtp*
+aliases: send-emails-with-ssmtp
 categories: Linux
 ---
 
@@ -8,60 +9,57 @@ Il existe plein de situations dans lesquelles envoyer des emails depuis un serve
 
 Pour autant, configurer un serveur mail avec `postfix`, `exim` ou `sendmail` nécessite un grand nombre d'étapes à réaliser et une configuration minutieuse, du fait de tous les dispositifs mis en place pour lutter contre le spam{{% marginalia %}}notamment DKIM, SPF, DMARC, IP statique et Reverse DNS, inscription sur listes blanches...{{% /marginalia %}}, ce qui rend la tâche très fastidieuse pour un simple serveur personnel.
 
-Néanmoins, il est possible de tout simplement utiliser un compte email déjà existant, et d'envoyer les mails *via* SMTP comme le ferait un client mail traditionnel. Nous allons pour cela utiliser *ssmtp* .
+Néanmoins, il est possible de tout simplement utiliser un compte email déjà existant, et d'envoyer les mails *via* SMTP comme le ferait un client mail traditionnel. 
+
+Jusqu'ici, j'utilisais pour cela *ssmtp*, mais celui-ci n'est plus maintenu, et il n'est plus possible de l'installer depuis Debian 10 *Buster*. Nous allons utiliser *msmtp*, tout aussi simple d'utilisation et efficace.
 
 
-### Installation de SSMTP
+### Installation de msmtp
 
-Depuis un système basé sur *Debian*, on peut simplement installer le paquet avec :
+Depuis un système basé sur *Debian*, on peut simplement installer les paquets suivants :
 
 ```
-sudo apt-get install ssmtp
+sudo apt-get install msmtp msmtp-mta
 ```
 
 Le fichier de configuration est le suivant :
 
 ```
-sudo nano /etc/ssmtp/ssmtp.conf
+sudo nano /etc/msmtprc
 ```
 
-Remplacez alors les paramètres suivants avec les identifiants et paramètres de votre fournisseur d'emails :
+Utilisez alors les paramètres suivants avec les identifiants et paramètres de votre fournisseur d'emails :
 
 ```bash
-root=<your-email>
-mailhub=<smtp-server>:<port>
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        gmail
+host           smtp.gmail.com
+port           587
+from           username@gmail.com
+user           username
+password       password
+account default : gmail
 ```
 
-Par exemple, avec Gmail :
+Par exemple, avec OVH :
 
 ```bash
-root=<your-email>
-mailhub=smtp.gmail.com:587
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
-```
-
-Ou encore, avec OVH :
-
-```bash
-root=<your-email>
-mailhub=ssl0.ovh.net:587
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        ovh
+host           ssl0.ovh.net
+port           587
+from           username@domain.tld
+user           username@domain.tld
+password       password
+account default : ovh
 ```
 
 Une fois le fichier enregistré, nous pouvons tenter d'envoyer nos premiers mails.
@@ -69,36 +67,10 @@ Une fois le fichier enregistré, nous pouvons tenter d'envoyer nos premiers mail
 
 ### Tester l'envoi d'emails
 
-Il est possible d'utiliser directement `ssmtp` pour envoyer votre email :
-
-```bash
-echo -e "Subject: Title\nMessage" | sudo ssmtp -vvv <email-adress>
-```
-
-Si vous recevez un message du style :
-
-```
-ssmtp: Cannot open <server>:<port>
-```
-
-Cela signifie que les paramètres de connexion à votre fournisseur d'emails sont incorrects, ou que le port n'est pas ouvert.
-
-Les processus sur votre serveur enverront directement les emails à l'aide de la commande `sendmail`. Pour la tester, on peut utiliser :
-
-```bash
-echo "Message" | sendmail -s "Title" <email-adress>
-```
-
-On peut également tester que la commande `mail` fonctionne bien :
+Il est possible d'utiliser directement `msmtp` pour envoyer votre email :
 
 ```bash
 echo "Message" | mail -s "Title" <email-adress>
-```
-
-Si les deux exemples précédents ne fonctionnent pas, il peut être nécessaire de créer le lien depuis `sendmail` vers `ssmtp` :
-
-```bash
-sudo ln -s /usr/sbin/ssmtp /usr/sbin/sendmail
 ```
 
 

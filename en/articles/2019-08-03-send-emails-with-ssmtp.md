@@ -1,6 +1,7 @@
 ---
-title: Send emails with ssmtp
-alt: Send emails <br> with *ssmtp*
+title: Send emails with msmtp
+alt: Send emails <br> with *msmtp*
+aliases: send-emails-with-ssmtp
 categories: Linux
 ---
 
@@ -8,60 +9,58 @@ There are many situations in which sending emails from a server can be useful, e
 
 However, configuring a mail server with `postfix`, `exim` or `sendmail` requires a large number of steps to be performed and a careful configuration, due to all the devices set up to fight spam{{% marginalia %}}including DKIM, SPF, DMARC, static IP and Reverse DNS, white list...{{% /marginalia %}}, which makes the task very tedious for a simple personal server.
 
-Nevertheless, it is possible to simply use an existing email account, and send *via* SMTP emails as a traditional email client would. We will use *ssmtp* for this purpose.
+Nevertheless, it is possible to simply use an existing email account, and send *via* SMTP emails as a traditional email client would.
+
+Until now, I used to use *ssmtp* for this, but this one is no longer maintained, and it is no longer possible to install it from Debian 10 *Buster*. We will use *msmtp*, which is just as easy to use and efficient.
 
 
-### Installation of SSMTP
 
-From a *Debian* based system, you can simply install the package with :
+### Installation of msmtp
+
+From a *Debian* based system, you can simply install the following packages :
 
 ```
-sudo apt-get install ssmtp
+sudo apt-get install msmtp msmtp-mta
 ```
 
 The configuration file is as follows:
 
 ```
-sudo nano /etc/ssmtp/ssmtp.conf
+sudo nano /etc/msmtprc
 ```
 
-Then replace the following settings with the IDs and settings of your email provider:
+Then use the following settings with the IDs and settings of your email provider:
 
 ```bash
-root=<your-email>
-mailhub=<smtp-server>:<port>
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
-```
-
-For example, with Gmail:
-
-```bash
-root=<your-email>
-mailhub=smtp.gmail.com:587
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        gmail
+host           smtp.gmail.com
+port           587
+from           username@gmail.com
+user           username
+password       password
+account default : gmail
 ```
 
 Or, with OVH :
 
 ```bash
-root=<your-email>
-mailhub=ssl0.ovh.net:587
-hostname=<your-domain>
-AuthUser=<username>
-AuthPass=<password>
-AuthMethod=LOGIN
-UseTLS=Yes
-UseSTARTTLS=Yes
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        ovh
+host           ssl0.ovh.net
+port           587
+from           username@domain.tld
+user           username@domain.tld
+password       password
+account default : ovh
 ```
 
 Once the file has been saved, we can try to send our first emails.
@@ -69,36 +68,10 @@ Once the file has been saved, we can try to send our first emails.
 
 ### Test sending emails
 
-It is possible to use `ssmtp` directly to send your email:
-
-```bash
-echo -e "Subject: Title\nMessage" | sudo ssmtp -vvv <email-adress>
-```
-
-If you receive a message like:
-
-```
-ssmtp: Cannot open <server>:<port>
-```
-
-This means that the connection settings to your email provider are incorrect, or that the port is not open.
-
-The processes on your server will send emails directly using the `sendmail` command. To test it, you can use:
-
-```bash
-echo "Message" | sendmail -s "Title" <email-adress>
-```
-
-You can also test that the `mail` command works well:
+It is possible to use `msmtp` directly to send your email:
 
 ```bash
 echo "Message" | mail -s "Title" <email-adress>
-```
-
-If the two previous examples do not work, it may be necessary to create the link from `sendmail` to `ssmtp`:
-
-```bash
-sudo ln -s /usr/sbin/ssmtp /usr/sbin/sendmail
 ```
 
 
